@@ -1,0 +1,147 @@
+
+/* ---------------------------------------------------home.html */
+
+
+.homeimage {
+    width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #f0f1f2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  background: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px grey;
+  text-align: center;
+
+}
+
+.centered2 {
+   position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #f0f1f2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px grey;
+  text-align: center; 
+}
+
+#homebutton {
+    background-color: #FF7F50;
+    text-align: center;
+    margin-right: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+
+/* ---------------------------------------------------navbar */
+
+
+.navbar {
+    margin: 0;
+    border: 0;
+    background-color: #e3b7a0;
+    color: #003366;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    
+}
+
+.nav-link {
+     font-family: 'Poppins', sans-serif;
+      color: #003366;
+}
+
+
+
+
+
+/* ---------------------------------------------------Image Carousel */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------Title across image carousel */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------About Travel Route 66 section */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------image cards that fade to text and paragraph of text below */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------Reviews */
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------radio buttons and selections */
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------Google Map */
+
+
+
+
+
+
+
+/* ---------------------------------------------------cards with package deals */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------Footer */
+
