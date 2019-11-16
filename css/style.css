@@ -94,6 +94,12 @@
 }
 
 
+
+
+/* ---------------------------------------------------Title across image carousel */
+
+
+
 .title {
    position: absolute;
   top: 60%;
@@ -107,32 +113,128 @@
   text-align: center; 
 }
 
-/* ---------------------------------------------------Title across image carousel */
-
-
-
-
-
 
 
 
 
 /* ---------------------------------------------------About Travel Route 66 section */
 
+ 
+#about {
+    background-color: #fcfcfc;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
 
 
+.people {
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+}
 
 
+h2 {
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
 
-
+.people2 {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
 
 /* ---------------------------------------------------image cards that fade to text and paragraph of text below */
 
 
+.box7 {
+  float: left;
+  position: relative;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 12px 12px grey;
+  margin-left: 33px;
+  
+}
+
+.attractions {
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+  
+}
+
+.nationalparks {
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+  
+}
+
+.dining {
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+   
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:  #e3b7a0;
+  
+}
+
+.box7:hover .overlay {
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+  
+  
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 10px;
+}
 
 
+.largebox {
+    box-sizing: border-box;
+    height: 670px;
+    width: 100%;
+    background-color:  #e3b7a0;
+    padding-top: 30px;
+    margin-top: 10px;
+    
+}
 
-
+.information {
+    padding-top: 370px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 
 
