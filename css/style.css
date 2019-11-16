@@ -64,16 +64,48 @@
 
 
 
-
-
 /* ---------------------------------------------------Image Carousel */
 
+.carousel-inner img {
+      width: 100%;
+}
+
+#myCarousel {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item {
+      position: relative;
+      margin-right: -100%;
+      width: 100%;
+}
+
+.carousel-caption {
+     text-align: center;
+     color: #FFc107;
+     font-weight: 700;
+     padding-bottom: 100px;
+     margin-bottom: 30px;
+}
+
+.container-fluid {
+    background-color: #e3b7a0;
+}
 
 
-
-
-
-
+.title {
+   position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -180%);
+  color: #f0f1f2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px grey;
+  text-align: center; 
+}
 
 /* ---------------------------------------------------Title across image carousel */
 
