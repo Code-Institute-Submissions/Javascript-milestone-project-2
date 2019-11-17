@@ -43,23 +43,23 @@
 }
 
 
+
 /* ---------------------------------------------------navbar */
 
-
-.navbar {
-    margin: 0;
-    border: 0;
-    background-color: #e3b7a0;
-    color: #003366;
-    position: fixed;
-    z-index: 10;
+.nav-bar-hover {
     width: 100%;
-    
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 99999999;
 }
 
-.nav-link {
-     font-family: 'Poppins', sans-serif;
-      color: #003366;
+
+.nav-bar-hover: hover {
+    font-size: 40px;
+}
+
+.nav-item {
+    font-size: 25px;
 }
 
 
@@ -294,8 +294,30 @@ h2 {
 /* ---------------------------------------------------radio buttons and selections */
 
 
+.panel {
+    background-color: #e3b7a0;
+    width: 100%;
+}
 
 
+.box8 {
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+
+h4 {
+    font-size: 20px;
+}
+
+
+.option-type {
+    margin-top: 20px;
+}
 
 
 
@@ -304,7 +326,10 @@ h2 {
 
 /* ---------------------------------------------------Google Map */
 
-
+div#map {
+    height: 700px;
+    width: 700px;
+}
 
 
 

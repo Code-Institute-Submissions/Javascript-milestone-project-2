@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Philosopher|Yeon+Sung|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
@@ -17,27 +17,32 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><span> Travel Route 66</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><span>Plan your trip</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><span>Contact Us</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="navlink" href="#"><span><i class="fa fa-phone"></i> Call us on 001 212 1663</span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black nav-bar-hover">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+<div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#aboutcompany">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#plantrip">Plan Your Trip</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contactform">Contact</a>
+          </li>
+         <li class="nav-item active">
+            <a class="nav-link" href="#"><i class="fa fa-phone"></i> Call us on 001 212 1663</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+        
+        
+        
   <div class="container-fluid">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <ul class="carousel-indicators">
@@ -73,7 +78,7 @@
   
   </header>
   
-  <section>
+  <section id="aboutcompany">
     <div class="container about" style="padding-bottom: 10px;">
       <div class="row">
         <div class="col-12 col-md-6">
@@ -151,34 +156,54 @@
        </div>
   </section>
   
-   
-    <div class="col-md-3 col-sm-3 col-xs-6">
+<section id="plantrip">
+<div class="col-md-12 panel">
+    <div class="state-selection box8">
+        <h4 class="state"><i class="fa fa-globe"></i>States</h4>
+        <input type="radio" name="state" value="state" id="state">Arizona<br>
+        <input type="radio" name="state" value="state">California<br>
+        <input type="radio" name="state" value="state"> Illinois<br>
+        <input type="radio" name="state" value="state">Kansas<br>
+        <input type="radio" name="state" value="state">Missouri<br>
+        <input type="radio" name="state" value="state">New Mexico<br>
+        <input type="radio" name="state" value="state">Oklahoma<br>
+        <input type="radio" name="state" value="state">Texas<br>
 
-        <div class="state-selection">
+<div class="col-md-12">
+    <div class="option-type">
+        <h4><i class="fa fa-search"></i>What are you looking for?</h4>
+        <input type="radio" name="attraction" value="attration"> Hotel/Motel<br>
+        <input type="radio" name="atrraction" value="attration">National Parks<br>
+        <input type="radio" name="attraction" value="attraction">Attractions<br>
+    </section>
+    
 
-          <h4><span><i class="fa fa-globe"></i>States</span></h4>
-  <input type="radio" name="state" value="state">Arizona<br>
-  <input type="radio" name="state" value="state">California<br>
-  <input type="radio" name="state" value="state"> Illinois<br>
-    <input type="radio" name="state" value="state">Kansas<br>
-  <input type="radio" name="state" value="state">Missouri<br>
-  <input type="radio" name="state" value="state">New Mexico<br>
-   <input type="radio" name="state" value="state">Oklahoma<br>
-    <input type="radio" name="state" value="state">Texas<br>
-      
-      <div class="col-md-3 col-sm-3 col-xs-6">
-
-        <div class="option-type">
-
-          <h4><span><i class="fa fa-search"></i>What are you looking for?</span></h4>
-  <input type="radio" name="attraction" value="attration"> Hotel/Motel<br>
-  <input type="radio" name="atrraction" value="attration">National Parks<br>
-  <input type="radio" name="attraction" value="attraction">Attractions<br>
-
+<div id="map"></div>
+    
+    
+    
+    
+    
+    <section id="contactform">
+        
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+ 
+<script>
+   
+  
+  
+    
+
+</script>
+
+ <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3IXa66_epHKre3maquKcTvX9rzmWFYsU&callback=initMap"></script>
+ <script src="js/script.js"></script>
 </body>
 
 </html>
