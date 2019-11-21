@@ -1,5 +1,7 @@
 
-/* ---------------------------------------------------home.html */
+
+
+/* ---------------------------------------------------home.html*/
 
 
 .homeimage {
@@ -44,7 +46,7 @@
 
 
 
-/* ---------------------------------------------------navbar */
+/* ---------------------------------------------------navbar*/
 
 .nav-bar-hover {
     width: 100%;
@@ -61,6 +63,7 @@
 .nav-item {
     font-size: 25px;
 }
+
 
 
 
@@ -94,9 +97,10 @@
 }
 
 
+*/
 
 
-/* ---------------------------------------------------Title across image carousel */
+/* ---------------------------------------------------Title across image carousel*/ 
 
 
 
@@ -115,7 +119,7 @@
 
 
 
-/* ---------------------------------------------------About Travel Route 66 section */
+/* ---------------------------------------------------About Travel Route 66 section*/
 
  
 #about {
@@ -146,7 +150,8 @@ h2 {
     color: #003366;
 }
 
-/* ---------------------------------------------------image cards that fade to text and paragraph of text below */
+
+/* ---------------------------------------------------image cards that fade to text and paragraph of text below*/
 
 
 .box7 {
@@ -239,7 +244,7 @@ h2 {
 
 
 
-/* ---------------------------------------------------Reviews */
+/* ---------------------------------------------------Reviews*/
 
 
  p.card-text {
@@ -286,44 +291,6 @@ h2 {
 
 
 
-
-
-
-
-
-/* ---------------------------------------------------radio buttons and selections */
-
-
-.panel {
-    background-color: #e3b7a0;
-    width: 100%;
-}
-
-
-.box8 {
-    box-sizing: border-box;
-    height: 400px;
-    width: 300px;
-    background-color: white;
-    margin-left: 20px;
-    padding-top: 20px;
-}
-
-
-h4 {
-    font-size: 20px;
-}
-
-
-.option-type {
-    margin-top: 20px;
-}
-
-
-
-
-
-
 /* ---------------------------------------------------Google Map */
 
 div#map {
@@ -331,9 +298,48 @@ div#map {
     width: 700px;
 }
 
+ 
+#routeseach {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+   align-items: center;
+   background: #fff;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 440px;
+    z-index: 1;
+}
 
-
-
+#search {
+  font-size: 14px;
+}
+      
+#search-attraction {
+  -webkit-box-flex: 1 1 190px;
+  -ms-flex: 1 1 190px;
+  flex: 1 1 190px;
+  margin: 0 8px;
+}
+      
+#routestates {
+ -webkit-box-flex: 1 1 140px;
+ -ms-flex: 1 1 140px;
+ flex: 1 1 140px;
+}
+      
+#state {
+ width: 30%;
+}
+      
+#autocomplete {
+ width: 70%;
+}
+      
+  
 
 /* ---------------------------------------------------cards with package deals */
 
