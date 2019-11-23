@@ -155,57 +155,49 @@
             </div>
        </div>
   </section>
+
+<form>
   
+  <p>Selection the State</p>
+  <input type="radio" id="state" value="arizona"> Arizona<br>
+  <input type="radio" id="state" value="california"> California<br>
+  <input type="radio" id="state" value="illinois"> Illinois<br>
+  <input type="radio" id="state" value="kansas"> Kansas<br>
+  <input type="radio" id="state" value="missouri"> Missouri<br>
+  <input type="radio" id="state" value="newmexico"> New Mexico<br>
+  <input type="radio" id="state" value="oklahoma"> Oklahoma<br>
+
+<p> Select National Park/Hike Trail</p>
+ <input type="radio" id="nationalPark" value="AC"> Amboy Crater California<br>
+  <input type="radio" id="nationalPark" value="EM"> El Malpais National Park New Mexico<br>
+  <input type="radio" id="nationalPark" value="GC"> Grand Canyon Arizona<br>
+  <input type="radio" id="nationalPark" value="MN"> Mojave National Preserve California<br>
+  <input type="radio" id="nationalPark" value="PD"> Palo Duro Canyon State Park Texas<br>
+  <input type="radio" id="nationalPark" value="PF"> Petrified Forest National Park Arizona<br>
+  <input type="radio" id="nationalPark" value="RN"> Route 66 national park Missouri<br>
+  
+  <p> Select Attraction</p>
+ <input type="radio" id="attraction" value="CR"> Cadillac Ranch Texas<br>
+  <input type="radio" id="attraction" value="SM"> Santa Monica Pier California<br>
+  <input type="radio" id="attraction" value="WT"> Willis Tower Skydeck  Illinois<br>
+  <input type="radio" id="attraction" value="MN"> meteor crater Arizona<br>
+  <input type="radio" id="attraction" value="NM"> The Neon Museum Nevada<br>
+  <input type="radio" id="attraction" value="MR"> Marsh Rainbow Arch Bridge Kansas<br>
+  <input type="radio" id="attraction" value="GT"> Gillioz Theatre Missouri<br>
+  <input type="radio" id="attraction" value="SM"> San Miguel Mission Santa Fe<br>
+
+  
+</form>
 
 <div id="map"></div>
 
-<div class="routesearch">
-    <div id="search">
-        Search National Parks, Trails and Attractions:
-    </div>
-    
-    <div id="search-attraction">
-        <input id="autocomplete" placeholder="Enter National Park or Attraction" type="text" oninput ="fetchAttractionInformation" />
-        <div id="attraction-info"></div>
-        <div id="nationalparks-info"></div>
-    </div>
-    
-    <div id="routestates">
-        <select id="state">
-        <option class="arizona">Arizona</option>    
-        <option class="california">California</option>
-        <option class="illinois">Illinois</option>
-        <option class="kansas">Kansas</option>
-        <option class="missouri">Missouri</option>
-        <option class="newmexico">New Mexico</option>
-        <option class="oklahoma">Oklahoma</option>
-        </select>
-    </div>
-</div>
-    
-    
-   
-    
-    
-    <section id="contactform">
-        
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
- 
-<script>
-   
-  
-  
-    
-
-</script>
 
  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3IXa66_epHKre3maquKcTvX9rzmWFYsU&callback=initMap"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOtOdyzFfHCYF5p2reeRxENvEt4ox7TH0&libraries=places&callback=initMap"async defer></script>
  <script src="js/script.js"></script>
 </body>
 
