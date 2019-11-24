@@ -293,6 +293,12 @@ h2 {
 
 /* ---------------------------------------------------Google Map */
 
+.drop-down {
+
+    margin-bottom: 15px;
+
+}
+
 #map {
   width: 600px;
   height: 600px;
