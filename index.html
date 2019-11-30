@@ -161,44 +161,26 @@
 
   
       -->
-<body>
-    <div class="pac-card" id="pac-card">
-      <div>
-        <div id="title">
-          Autocomplete search
-        </div>
-        <div id="type-selector" class="pac-controls">
-          <input type="radio" name="type" id="changetype-all" checked="checked">
-          <label for="changetype-all">All</label>
 
-          <input type="radio" name="type" id="changetype-establishment">
-          <label for="changetype-establishment">Establishments</label>
-
-          <input type="radio" name="type" id="changetype-address">
-          <label for="changetype-address">Addresses</label>
-
-          <input type="radio" name="type" id="changetype-geocode">
-          <label for="changetype-geocode">Geocodes</label>
+<div class="row text-center">
+                <div class="col d-sm-none d-md-block"></div>
+                <div id="locationField" class="col-sm-12 col-md-10 mt-4">
+                    <input id="searchPlace" type="text" placeholder="Enter the city to start...">
+                </div>
+                <div class="col d-sm-none d-md-block"></div>
+            </div>
         </div>
-        <div id="strict-bounds-selector" class="pac-controls">
-          <input type="checkbox" id="use-strict-bounds" value="">
-          <label for="use-strict-bounds">Strict Bounds</label>
-        </div>
-      </div>
-      <div id="pac-container">
-        <input id="pac-input" type="text"
-            placeholder="Enter a location">
-      </div>
-    </div>
+    
+    
+    
     <div id="map"></div>
-    <div id="infowindow-content">
-      <img src="" width="16" height="16" id="place-icon">
-      <span id="place-name"  class="title"></span><br>
-      <span id="place-address"></span>
-    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4  btn-group search-buttons">
+                <button type="button" id="accommodation" class="btn btn-main"><br/>Hotels/motels</button>
+                <button type="button" id="nationalParks" class="btn btn-main"> <br/> National Parks and Hikes</button>
+                <button type="button" id="attraction" class="btn btn-main"><br/>Attractions</button>
+            </div>
 
- 
- 
+   
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -206,6 +188,7 @@
   
 
  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCe1rYVwHr_HiAsrJmq36OZK2Sg26xmK4&libraries=places"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCe1rYVwHr_HiAsrJmq36OZK2Sg26xmK4&libraries=places&callback=initMap"async defer></script>
  <script src="js/script.js"></script>
 </body>

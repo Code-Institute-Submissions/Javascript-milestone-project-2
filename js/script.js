@@ -1,87 +1,170 @@
+//Global Variables---------------------------------
+var map;
+var infoWindow;
+var placesService;
+var markers = [];
+var ireland = { lat: 53.2, lng: -9.0 };
+var autocomplete;
+var placeType;
+
+
+//Initialize Map------------------------------------
 function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: ireland,
+    zoom: 2
+  });
+  // Info window with place details
+  infoWindow = new google.maps.InfoWindow({
+    content: document.getElementById('info-content')
+  });
+
+
+  autocomplete = new google.maps.places.Autocomplete(
+    (
+      document.getElementById('searchPlace')), {
+      types: ['(cities)'],
+    });
+
+  autocomplete.addListener('place_changed', onPlaceChanged);
+
+  //Place search---------------------------------------
+  function onPlaceChanged() {
+    var place = autocomplete.getPlace();
+    if (place.geometry) {
+      map.panTo(place.geometry.location);
+      map.setZoom(13);
+    }
+    else {
+      document.getElementById('searchPlace').placeholder = 'Where are you going?';
+    }
+  }
+  //Nearby place search by click---------------------------
+  placesService = new google.maps.places.PlacesService(map);
+  
+  document.getElementById("accommodation").addEventListener("click", function() {
+    placeType = ['lodging'];
+    clearMarkers();
+    searchPlaces();
+  });
+  document.getElementById("restaurant").addEventListener("click", function() {
+    placeType = ['restaurant', 'bar'];
+    clearMarkers();
+    searchPlaces();
+  });
+  document.getElementById("attraction").addEventListener("click", function() {
+    placeType = ['night_club', 'zoo', 'museum', 'amusement_park', 'park'];
+    clearMarkers();
+    searchPlaces();
+  });
+  document.getElementById("store").addEventListener("click", function() {
+    placeType = ['store', 'shopping_mall'];
+    clearMarkers();
+    searchPlaces();
+  });
+
+  //Sets the info window in the place details html element------------------------------
+  infoWindow = new google.maps.InfoWindow({
+    content: document.getElementById('info-content')
+  });
+}
+//Search places---------------------------------------------------------
+function searchPlaces() {
+  var search = {
+    bounds: map.getBounds(),
+    types: placeType
+  };
+  placesService.nearbySearch(search, function(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      //Clear markers---------------------------------------------------
+      clearMarkers();
+      //Create markers----------------------------------------------------
+      for (var i = 0; i < results.length; i++) {
+        markers[i] = new google.maps.Marker({
+          position: results[i].geometry.location,
+          animation: google.maps.Animation.DROP
         });
-        var card = document.getElementById('pac-card');
-        var input = document.getElementById('pac-input');
-        var types = document.getElementById('type-selector');
-        var strictBounds = document.getElementById('strict-bounds-selector');
-
-        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
-
-        var autocomplete = new google.maps.places.Autocomplete(input);
-
-        // Bind the map's bounds (viewport) property to the autocomplete object,
-        // so that the autocomplete requests use the current map bounds for the
-        // bounds option in the request.
-        autocomplete.bindTo('bounds', map);
-
-        // Set the data fields to return when the user selects a place.
-        autocomplete.setFields(
-            ['address_components', 'geometry', 'icon', 'name']);
-
-        var infowindow = new google.maps.InfoWindow();
-        var infowindowContent = document.getElementById('infowindow-content');
-        infowindow.setContent(infowindowContent);
-        var marker = new google.maps.Marker({
-          map: map,
-          anchorPoint: new google.maps.Point(0, -29)
-        });
-
-        autocomplete.addListener('place_changed', function() {
-          infowindow.close();
-          marker.setVisible(false);
-          var place = autocomplete.getPlace();
-          if (!place.geometry) {
-            // User entered the name of a Place that was not suggested and
-            // pressed the Enter key, or the Place Details request failed.
-            window.alert("No details available for input: '" + place.name + "'");
-            return;
-          }
-
-          // If the place has a geometry, then present it on a map.
-          if (place.geometry.viewport) {
-            map.fitBounds(place.geometry.viewport);
-          } else {
-            map.setCenter(place.geometry.location);
-            map.setZoom(17);  // Why 17? Because it looks good.
-          }
-          marker.setPosition(place.geometry.location);
-          marker.setVisible(true);
-
-          var address = '';
-          if (place.address_components) {
-            address = [
-              (place.address_components[0] && place.address_components[0].short_name || ''),
-              (place.address_components[1] && place.address_components[1].short_name || ''),
-              (place.address_components[2] && place.address_components[2].short_name || '')
-            ].join(' ');
-          }
-
-          infowindowContent.children['place-icon'].src = place.icon;
-          infowindowContent.children['place-name'].textContent = place.name;
-          infowindowContent.children['place-address'].textContent = address;
-          infowindow.open(map, marker);
-        });
-
-        // Sets a listener on a radio button to change the filter type on Places
-        // Autocomplete.
-        function setupClickListener(id, types) {
-          var radioButton = document.getElementById(id);
-          radioButton.addEventListener('click', function() {
-            autocomplete.setTypes(types);
-          });
-        }
-
-        setupClickListener('changetype-all', []);
-        setupClickListener('changetype-address', ['address']);
-        setupClickListener('changetype-establishment', ['establishment']);
-        setupClickListener('changetype-geocode', ['geocode']);
-
-        document.getElementById('use-strict-bounds')
-            .addEventListener('click', function() {
-              console.log('Checkbox clicked! New state=' + this.checked);
-              autocomplete.setOptions({strictBounds: this.checked});
-            });
+        markers[i].placeResult = results[i];
+        google.maps.event.addListener(markers[i], 'click', showInfoWindow); //Show info window when user clicks on a marker---
+        //google.maps.event.addListener(markers[i], 'click', showInfoWindow); Show info window when user clicks on a marker---
+        setTimeout(dropMarker(i), i * 100);
       }
+
+    }
+  });
+}
+//Add markers to map----------------------------
+function dropMarker(i) {
+  return function() {
+    markers[i].setMap(map);
+  };
+}
+
+//Clear markers---------------------------------
+function clearMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    if (markers[i]) {
+      markers[i].setMap(null);
+    }
+  }
+  markers = [];
+}
+// Get the place details for a place. Show the information in an info window,
+// anchored on the marker for the place that the user selected.
+function showInfoWindow() {
+  var marker = this;
+  placesService.getDetails({ placeId: marker.placeResult.place_id },
+    function(place, status) {
+      if (status !== google.maps.places.PlacesServiceStatus.OK) {
+        return;
+      }
+      infoWindow.open(map, marker);
+      renderPlaceDetails(place);
+    });
+}
+
+// Load the place information into the HTML elements used by the info window.
+function renderPlaceDetails(place) {
+  document.getElementById('place-name').textContent = place.name;
+  document.getElementById('place-address').textContent = place.formatted_address;
+
+  if (place.formatted_phone_number) {
+    document.getElementById('place-phoneNumber').textContent = place.formatted_phone_number;
+  }
+  else {
+    document.getElementById('place-phoneNumber').textContent = 'Not available';
+  }
+ 
+
+  // Assign a five-star rating to the place, using a black star ('&#10029;')
+  // to indicate the rating the place has earned, and a white star ('&#10025;')
+  // for the rating points not achieved.
+  if (place.rating) {
+    var ratingHtml = '';
+    for (var i = 0; i < 5; i++) {
+      if (place.rating < (i + 0.5)) {
+        ratingHtml += '&#10025;';
+      }
+      else {
+        ratingHtml += '&#10029;';
+      }
+      document.getElementById('place-rating-wrapper').style.display = '';
+      document.getElementById('place-rating').innerHTML = ratingHtml;
+    }
+  }
+  else {
+    document.getElementById('place-rating-wrapper').style.display = 'none';
+  }
+
+  //This creates a link to the website-------
+
+  if (place.website) {
+    document.getElementById('place-website-wrapper').style.display = '';
+    document.getElementById('place-website').innerHTML = '<a class= "btn btn-red" href="' + place.website + '" target="_blank">' + 'Website ' + '</a>';
+  }
+  else {
+    document.getElementById('place-website-wrapper').style.display = 'none';
+  }
+}
+
+      
