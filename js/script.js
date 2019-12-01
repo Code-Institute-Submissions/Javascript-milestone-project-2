@@ -4,7 +4,7 @@ var map;
 var infoWindow;
 var placesService;
 var markers = [];
-var america = { lat: 53.2, lng: -9.0 };
+var america = {lat: 37.0902, lng: -95.7129};
 var autocomplete;
 var placeType;
 
@@ -13,8 +13,9 @@ var placeType;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: america,
-    zoom: 2
+    zoom: 4
   });
+  
   // Info window with place details
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById('info-content')
@@ -25,6 +26,7 @@ function initMap() {
     (
       document.getElementById('searchPlace')), {
       types: ['(cities)'],
+      componentRestrictions: {country: 'us'}
     });
     
 
@@ -35,7 +37,7 @@ function initMap() {
     var place = autocomplete.getPlace();
     if (place.geometry) {
       map.panTo(place.geometry.location);
-      map.setZoom(13);
+      map.setZoom(10);
     }
     else {
       document.getElementById('searchPlace').placeholder = 'Where are you going?';
@@ -56,20 +58,16 @@ function initMap() {
     searchPlaces();
   });
   document.getElementById("nationalParks").addEventListener("click", function() {
-    placeType = ['parks', 'hikes', 'national_park'];
+    placeType = ['parks', 'hikes', 'national_park', 'canyon_park', 'mountain', 'state_park'];
     clearMarkers();
     searchPlaces();
   });
   document.getElementById("attraction").addEventListener("click", function() {
-    placeType = ['night_club', 'zoo', 'museum', 'amusement_park' ];
+    placeType = ['night_club', 'zoo', 'museum', 'cinema' ];
     clearMarkers();
     searchPlaces();
   });
-  document.getElementById("store").addEventListener("click", function() {
-    placeType = ['store', 'shopping_mall'];
-    clearMarkers();
-    searchPlaces();
-  });
+
 
   //Sets the info window in the place details html element------------------------------
   infoWindow = new google.maps.InfoWindow({
