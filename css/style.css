@@ -3,7 +3,6 @@
 
 /* ---------------------------------------------------home.html*/
 
-/*
 
 
 .homeimage {
@@ -50,7 +49,7 @@
 
 /* ---------------------------------------------------navbar*/
 
-/*
+
 
 .nav-bar-hover {
     width: 100%;
@@ -73,7 +72,7 @@
 
 /* ---------------------------------------------------Image Carousel */
 
-/*
+
 
 .carousel-inner img {
       width: 100%;
@@ -103,12 +102,12 @@
 }
 
 
-*/
+
 
 
 /* ---------------------------------------------------Title across image carousel*/ 
 
-/*
+
 
 
 
@@ -129,7 +128,7 @@
 
 /* ---------------------------------------------------About Travel Route 66 section*/
 
-/*
+
 
  
 #about {
@@ -163,7 +162,7 @@ h2 {
 
 /* ---------------------------------------------------image cards that fade to text and paragraph of text below*/
 
-/*
+
 
 
 .box7 {
@@ -258,7 +257,7 @@ h2 {
 
 /* ---------------------------------------------------Reviews*/
 
-/*
+
 
 
  p.card-text {
@@ -311,12 +310,7 @@ h2 {
         height: 800px;
         width: 800px;
       }
-     
-
-/* ---------------------------------------------------cards with package deals */
-
-  /* Optional: Makes the sample page fill the window. */
-      html, body {
+        html, body {
         height: 100%;
         margin: 0;
         padding: 0;
@@ -352,7 +346,7 @@ h2 {
 }
 
 .btn-main {
-    background-color: red;
+    background-color: #e3b7a0;
     color: #020202;
     font-weight: 400;
 }
@@ -368,3 +362,9 @@ h2 {
     padding: 5px 10px 5px 10px;
 }
 
+
+
+/* ---------------------------------------------------cards with package deals */
+
+  /* Optional: Makes the sample page fill the window. */
+   
