@@ -1,46 +1,3 @@
-/* ---------------------------------------------------home.html*/
-
-.homeimage {
-    width: 100%;
-}
-
-.centered {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    color: #f0f1f2;
-    font-family: 'Poppins', sans-serif;
-    font-size: 70px;
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 2px 2px grey;
-    text-align: center;
-
-}
-
-.centered2 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    color: #f0f1f2;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    background: rgba(0, 0, 0, 0);
-    text-shadow: 2px 2px grey;
-    text-align: center;
-}
-
-#homebutton {
-    background-color: #FF7F50;
-    text-align: center;
-    margin-right: 40px;
-    font-size: 20px;
-    margin-top: 20px;
-    border-radius: 30px;
-}
-
-
 
 /* ---------------------------------------------------navbar*/
 
@@ -89,10 +46,8 @@
 }
 
 .container-fluid {
-    background-color: #00688B;
+    background-color: #BF0A30;
 }
-
-
 
 
 
@@ -105,12 +60,27 @@
     transform: translate(-50%, -180%);
     color: #f0f1f2;
     font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px grey;
+    text-align: center;
+   
+   
+}
+
+.title2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+    color: #f0f1f2;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     background: rgba(0, 0, 0, 0);
     text-shadow: 2px 2px grey;
     text-align: center;
+    
 }
-
 
 
 /* ---------------------------------------------------About Travel Route 66 section*/
@@ -195,6 +165,14 @@ h2 {
 
 }
 
+#overlaytitle {
+    font-size: 15px;
+    color: white;
+   padding-top: 20px;
+   
+   
+}
+
 .box7:hover .overlay {
     transition-timing-function: ease-in-out;
     opacity: 1;
@@ -232,14 +210,17 @@ h2 {
     padding-left: 50px;
     padding-right: 50px;
     color: white;
+    font-size: 18px;
 }
+
+
 
 
 
 /* ---------------------------------------------------Reviews*/
 
 .card-text {
-    font-size: 15px;
+    font-size: 16px;
     color: #003366;
 }
 
@@ -284,11 +265,21 @@ h2 {
 
 /* ---------------------------------------------------Google Map */
 
+.box5 {
+    box-sizing: border-box;
+    width: 70%;
+    height: 900px;
+    background-color: #BF0A30;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+
 #map {
-    height: 800px;
-    width: 800px;
-    margin-left: 250px;
-    margin-top: 50px;
+    height: 700px;
+    width: 700px;
+    margin-left: 130px;
+    margin-top: 30px;
 }
 
 #listing {
@@ -309,29 +300,32 @@ h2 {
 
 #usState {
     width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.search-buttons {
-    position: relative;
-    top: -40px;
-    height: 80px;
-}
 
 .btn-main {
-    background-color:  #00688B;
+    background-color: #00688B;
     color: white;
     font-weight: 400;
+   
 }
 
 .btn-main:hover {
-    background-color: #d0a417;
-    font-weight: bold;
+    background-color: #BF0A30;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    
 }
 
-#searchPlace {
-    width: inherit;
-    height: 40px;
-    padding: 5px 10px 5px 10px;
+#filterbuttons {
+    margin-left: 300px;
+    margin-top: 70px;
+   
 }
 
 
@@ -340,7 +334,7 @@ h2 {
 
 #info-box {
     max-width: 300px;
-    background-color: #e3b7a0;
+    background-color:  #00688B;
 }
 
 
@@ -348,6 +342,7 @@ h2 {
 .place-line {
     font-weight: 400;
     font-size: 16px;
+    color: white;
   
     
 }
@@ -361,7 +356,7 @@ h2 {
 
 
 #place-name {
-    color: #000;
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1rem;
