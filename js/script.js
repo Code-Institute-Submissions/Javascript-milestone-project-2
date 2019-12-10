@@ -37,7 +37,7 @@ function initMap() {
       map.setZoom(10);
     }
     else {
-      document.getElementById('searchPlace').placeholder = 'Where are you going?';
+      document.getElementById('searchPlace').placeholder = 'What do you want to do?';
     }
   }
 
@@ -47,17 +47,17 @@ function initMap() {
   //Jquery learned from the Code Institute lessons to only generate specific markers when the user clicks on the button
 
   document.getElementById("accommodation").addEventListener("click", function() {
-    placeType = ['lodging', 'hotel', 'motel'];
+    placeType = ['lodging', 'hotel', 'motel', 'hostel'];
     clearMarkers();
     searchPlaces();
   });
-  document.getElementById("nationalParks").addEventListener("click", function() {
-    placeType = ['hikes', 'national', 'canyon', 'mountain', 'state_park', 'peak', 'preserve'];
+  document.getElementById("restaurants").addEventListener("click", function() {
+    placeType = ['cafe', 'restaurant', 'diner', 'bar'];
     clearMarkers();
     searchPlaces();
   });
   document.getElementById("attraction").addEventListener("click", function() {
-    placeType = ['night_club', 'zoo', 'museum', 'cinema', 'bridge'];
+    placeType = ['night_club', 'zoo', 'museum', 'cinema', 'bus_tour'];
     clearMarkers();
     searchPlaces();
   });
