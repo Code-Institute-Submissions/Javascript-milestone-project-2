@@ -166,7 +166,7 @@ h2 {
 }
 
 #overlaytitle {
-    font-size: 15px;
+    font-size: 17px;
     color: white;
    padding-top: 20px;
    
@@ -382,7 +382,7 @@ h2 {
 
 /* ---------------------------------------------------contact form */
 
-.box4 {
+#contactform {
     box-sizing: border-box;
     width: 100%;
     height: 520px;

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Philosopher|Yeon+Sung|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Travel USA</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    
     <script type="text/javascript">
     var email;
     
@@ -175,12 +175,14 @@
             </div>
             <div class="col d-sm-none d-md-block"></div>
         </div>
+        <div id="plantrip">
         <div id="map"></div>
         <div class="btn-group search-buttons" id="filterbuttons">
             <button type="button" id="accommodation" class="btn btn-main one"><br/>Hotels/motels</button>
             <button type="button" id="restaurants" class="btn btn-main two"> <br/>Dining and Restaurants</button>
             <button type="button" id="attraction" class="btn btn-main three"><br/>Attractions</button>
         </div>
+    </div>
     </div>
 
     <div style="display: none;">
@@ -199,7 +201,7 @@
         </div>
     </div>
 
-    <form class="box4" onsubmit="return sendMail(this);" method:"POST">
+    <form id="contactform" onsubmit="return sendMail(this);" method:"POST">
         <h4>Contact us now and start planning the holiday of a lifetime!</h4>
         <div class="form-header">
             <label for="name">Full Name</label>
@@ -222,10 +224,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCe1rYVwHr_HiAsrJmq36OZK2Sg26xmK4&libraries=places"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCe1rYVwHr_HiAsrJmq36OZK2Sg26xmK4&libraries=places&callback=initMap" async defer></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script src="js/sendEmail.js"></script>
+     <script src="js/script.js"></script>
 </body>
 
 </html>
