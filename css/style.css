@@ -22,20 +22,6 @@
 
 /* ---------------------------------------------------Image Carousel */
 
-.carousel-inner img {
-    width: 100% !important;
-}
-
-#myCarousel {
-    margin: 0;
-    padding: 0;
-}
-
-.carousel-item {
-    position: relative;
-    margin-right: -100%;
-    width: 100%;
-}
 
 .carousel-caption {
     text-align: center;
@@ -93,7 +79,7 @@
 
 
 .people {
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 20px;
     width: 300px;
     height: 200px;
@@ -109,6 +95,7 @@ h2 {
 
 .people2 {
     margin-top: 20px;
+    margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     color: #003366;
 }
@@ -116,6 +103,8 @@ h2 {
 
 /* ---------------------------------------------------image cards that fade to text and paragraph of text below*/
 
+
+@media (min-width: 992px) {
 .box7 {
     float: left;
     position: relative;
@@ -124,33 +113,46 @@ h2 {
     border-radius: 10px;
     box-shadow: 10px 12px 12px #4682B4;
     margin-left: 33px;
-
+}
 }
 
+
+@media (min-width: 992px) {
 .spaceneedle {
     display: block;
     width: 400px;
     height: 300px;
-    margin-top: 20px;
+    margin-top: 30px;
 
 }
+}
 
+
+
+@media (min-width: 992px) {
 .nationalparks {
     display: block;
     width: 400px;
     height: 300px;
-    margin-top: 20px;
+    margin-top: 30px;
 
 }
+}
 
+
+
+@media (min-width: 992px) {
 .goldengate {
     display: block;
     width: 400px;
     height: 300px;
-    margin-top: 20px;
-
+    margin-top: 30px;
+}
 }
 
+
+
+@media (min-width: 992px) {
 .overlay {
     position: absolute;
     top: 0;
@@ -161,25 +163,35 @@ h2 {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-     background-color: #00688B;
+    background-color: #00688B;
+    margin-top: 10px;
 
 }
+}
 
+
+
+@media (min-width: 992px) {
 #overlaytitle {
     font-size: 17px;
     color: white;
    padding-top: 20px;
-   
+   margin-top: 10px;
    
 }
+}
 
+
+@media (min-width: 992px) {
 .box7:hover .overlay {
     transition-timing-function: ease-in-out;
     opacity: 1;
 
-
+}
 }
 
+
+@media (min-width: 992px) {
 .text {
     color: white;
     font-size: 15px;
@@ -193,27 +205,32 @@ h2 {
     text-align: center;
     padding-top: 10px;
 }
+}
 
 
+@media (min-width: 992px) {
 .largebox {
     box-sizing: border-box;
-    height: 670px;
+    height: 620px;
     width: 100%;
      background-color: #00688B;
     padding-top: 30px;
     margin-top: 10px;
 
 }
+}
 
+
+@media (min-width: 992px) {
 .information {
     padding-top: 370px;
     padding-left: 50px;
     padding-right: 50px;
     color: white;
     font-size: 18px;
+    margin-top: 20px;
 }
-
-
+}
 
 
 
@@ -265,21 +282,42 @@ h2 {
 
 /* ---------------------------------------------------Google Map */
 
+@media (min-width: 1200px) {
 .box5 {
     box-sizing: border-box;
     width: 70%;
-    height: 970px;
+    height: 1010px;
     background-color: #BF0A30;
     margin-left: 200px;
     margin-top: 40px;
 }
+}
 
 
+
+@media (max-width: 768px) {
+#map {
+    height: 400px;
+    width: 500px;
+   
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+#map {
+    height: 500px;
+    width: 600px;
+   
+}
+}
+
+@media (min-width: 1200px) {
 #map {
     height: 700px;
     width: 700px;
     margin-left: 130px;
     margin-top: 30px;
+}
 }
 
 #listing {
@@ -304,6 +342,7 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
+    padding-top: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -311,12 +350,13 @@ h2 {
 .btn-main {
     color: white;
     font-weight: 400;
-     background-color: #00688B;
-    height: 100px;
+    background-color: #00688B;
+    height: 80px;
     width: 160px;
-    padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    padding-bottom: 60px;
+    
 
    
 }
@@ -331,18 +371,20 @@ h2 {
 }
 
 .one {
-    margin: 15px 20px 0 200px;
+    margin: 35px 20px 0 200px;
     
    
 }
 
 .two {
-    margin: 15px 20px 0 200px;
+    margin: 35px 20px 0 200px;
 }
 
 .three {
-    margin: 15px 20px 0 200px;
+    margin: 35px 20px 0 200px;
 }
+
+
 
 /* ---------------------------------------------------Info windows on google maps */
 
@@ -440,7 +482,13 @@ h4 {
 }
 
 #submitButton {
-    background-color: red;
+    background-color: white;
+
+}
+
+#submitButton:hover {
+    background-color: #BF0A30;
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------cards with package deals */
