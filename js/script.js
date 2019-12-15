@@ -78,7 +78,7 @@ function initMap() {
         for (var i = 0; i < results.length; i++) {
           markers[i] = new google.maps.Marker({
             position: results[i].geometry.location,
-            animation: google.maps.Animation.DROP,
+            icon: image,
            
           });
           markers[i].placeResult = results[i];
