@@ -10,7 +10,7 @@ var autocomplete;
 var placeType;
 var usMarker = "images/flagimage.png";
 
-//Generate map ------------------------------------- 
+//Generate map ----------
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: america,
@@ -29,7 +29,7 @@ function initMap() {
 
   autocomplete.addListener('place_changed', onPlaceChanged);
 
-  //Place search---------------------------------------
+  //Place search-----
   function onPlaceChanged() {
     var place = autocomplete.getPlace();
     if (place.geometry) {
@@ -37,7 +37,7 @@ function initMap() {
       map.setZoom(10);
     }
     else {
-      document.getElementById('searchPlace').placeholder = 'What do you want to do?';
+      document.getElementById('searchPlace').placeholder = 'What do you want to explore';
     }
   }
 
@@ -64,7 +64,7 @@ function initMap() {
 
 
 
-  //Search places---------------------------------------------------------
+  //Search places----
   function searchPlaces() {
     var search = {
       bounds: map.getBounds(),
@@ -72,9 +72,9 @@ function initMap() {
     };
     placesService.nearbySearch(search, function(results, status) {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
-        //Clear markers---------------------------------------------------
+        //Clear markers----
         clearMarkers();
-        //Create markers----------------------------------------------------
+        //Create markers, individualise markers so that the US flag comes the marker----
         for (var i = 0; i < results.length; i++) {
           markers[i] = new google.maps.Marker({
             position: results[i].geometry.location,
@@ -98,7 +98,7 @@ function initMap() {
     };
   }
 
-  //Clearing the markers when the user clicks on something else
+  //Clearing the markers when the user clicks on a different button
   function clearMarkers() {
     for (var i = 0; i < markers.length; i++) {
       if (markers[i]) {
@@ -108,13 +108,12 @@ function initMap() {
     markers = [];
   }
 
-  //Sets the info window in the place details html element------------------------------
+  //Sets the info window in the place details html element. I looked at previous students projects to give me some ideas on how to do this, in addition to the google maps api.
+  //Details of the student projects I looked at are detailed on my readme
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById('info-box')
   });
 }
-// Get the place details for a place. Show the information in an info window,
-// anchored on the marker for the place that the user selected.
 
 
 function showInfoWindow() {

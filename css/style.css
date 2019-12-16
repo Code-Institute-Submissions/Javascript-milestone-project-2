@@ -22,19 +22,33 @@
 
 /* ---------------------------------------------------Image Carousel */
 
-
-.carousel-caption {
-    text-align: center;
-    color: #FFc107;
-    font-weight: 700;
-    padding-bottom: 100px;
-    margin-bottom: 30px;
+.carousel-item {
+    width: 100%!important;
+    height: 500px;
 }
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 400px;
+        width: 100%!important;
+    }
+}
+
+
 
 .container-fluid {
     background-color: #BF0A30;
+    width: 100%!important;
 }
 
+
+@media (max-width: 768px) { 
+.container-fluid {
+    background-color: #BF0A30;
+    width: 100%!important;
+    height: 400px;
+}
+}
 
 
 /* ---------------------------------------------------Title across image carousel*/
@@ -101,12 +115,31 @@
     margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+.people {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 350px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+}
 
 h2 {
     margin-top: 40px;
     font-family: 'Poppins', sans-serif;
     color: #003366;
 }
+
+@media (max-width: 768px) {
+h2 {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #003366;
+    text-align: center;
+}
+}
+
 
 .people2 {
     margin-top: 20px;
@@ -115,6 +148,17 @@ h2 {
     color: #003366;
 }
 
+@media (max-width: 768px) {
+.people2 {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #003366;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+}
 
 /* ---------------------------------------------------image cards that fade to text and paragraph of text below*/
 
@@ -137,7 +181,7 @@ h2 {
     display: block;
     width: 400px;
     height: 300px;
-    margin-top: 30px;
+    margin-top: 15px;
 
 }
 
@@ -145,8 +189,9 @@ h2 {
 @media (max-width: 768px) {
     .spaceneedle {
         display: block;
-        width: 410px;
+        width: 413px;
         height: 400px;
+        padding-bottom: 20px;
     }
 }
 
@@ -163,7 +208,7 @@ h2 {
 @media (max-width: 768px) {
     .nationalparks {
         display: block;
-        width: 410px;
+        width: 413px;
         height: 400px;
     }
 }
@@ -178,6 +223,11 @@ h2 {
 }
 }
 
+@media (max-width: 768px) {
+    .goldengate {
+        margin-top: 40px;
+    }
+}
 
 
 @media (min-width: 992px) {
@@ -211,10 +261,9 @@ h2 {
 
 @media (max-width: 768px) {
 #overlaytitle {
-   font-size: 18px;
+   font-size: 20px;
    color: #003366;
-   padding-top: 20px;
-   margin-top: 10px;
+   padding-top: 10px;
    text-align: center;
    padding-left: 15px;
    padding-right: 15px;
@@ -248,6 +297,17 @@ h2 {
 }
 }
 
+
+@media (max-width: 768px) {
+ .text {
+    color: #003366;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    }
+}
 
 @media (min-width: 992px) {
 .largebox {
@@ -345,11 +405,12 @@ h2 {
 }
 
 
-
 @media (max-width: 768px) {
 #map {
     height: 400px;
-    width: 500px;
+    width: 420px;
+    margin-top: 50px;
+    margin-bottom: 10px;
    
 }
 }
@@ -387,6 +448,7 @@ h2 {
     width: 100%;
 }
 
+
 #usState {
     width: 100%;
     color: white;
@@ -397,6 +459,20 @@ h2 {
     font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width: 768px) {
+    #usState {
+        color: black;
+        padding-top: 900px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+#searchPlace {
+    margin-top: 50px;
+}
+}
 
 .btn-main {
     color: white;
@@ -444,6 +520,14 @@ h2 {
     }
 }
 
+@media (max-width: 768px) {
+    .one:hover {
+        margin: 20px 10px 0 20px;
+        background-color: #BF0A30;
+        color: white;
+        font-size: 15px
+    }
+}
 
 .two {
     margin: 35px 20px 0 200px;
@@ -455,7 +539,14 @@ h2 {
     }
 }
 
-
+@media (max-width: 768px) {
+    .two:hover {
+        margin: 20px 10px 0 20px;
+        background-color: #BF0A30;
+        color: white;
+        font-size: 15px
+    }
+}
 
 .three {
     margin: 35px 20px 0 200px;
@@ -464,6 +555,15 @@ h2 {
 @media (max-width: 768px) {
     .three {
         margin: 20px 10px 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .three:hover {
+        margin: 20px 10px 0 20px;
+        background-color: #BF0A30;
+        color: white;
+        font-size: 15px
     }
 }
 
@@ -516,7 +616,7 @@ h2 {
 @media (max-width: 768px) {
     #contactform {
         box-sizing: border-box;
-        width: 430px;
+        width: 420px;
         height: 600px;
          background-color: #00688B;
     }
@@ -548,9 +648,9 @@ h2 {
     margin-left: 20px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     #emailaddress {
-        padding-right: 40px;
+        margin-right: 40px;
     }
 }
 
