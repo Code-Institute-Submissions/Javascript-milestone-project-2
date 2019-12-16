@@ -54,6 +54,21 @@
    
 }
 
+@media (max-width: 992px) {
+.title {
+    transform: translate(-50%, -180%);
+    color: #f0f1f2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px grey;
+    text-align: center;
+   
+}
+}
+
+
+@media (min-width: 992px) {
 .title2 {
     position: absolute;
     top: 60%;
@@ -65,7 +80,7 @@
     background: rgba(0, 0, 0, 0);
     text-shadow: 2px 2px grey;
     text-align: center;
-    
+}   
 }
 
 
@@ -117,7 +132,7 @@ h2 {
 }
 
 
-@media (min-width: 992px) {
+
 .spaceneedle {
     display: block;
     width: 400px;
@@ -125,11 +140,18 @@ h2 {
     margin-top: 30px;
 
 }
+
+
+@media (max-width: 768px) {
+    .spaceneedle {
+        display: block;
+        width: 410px;
+        height: 400px;
+    }
 }
 
 
 
-@media (min-width: 992px) {
 .nationalparks {
     display: block;
     width: 400px;
@@ -137,8 +159,14 @@ h2 {
     margin-top: 30px;
 
 }
-}
 
+@media (max-width: 768px) {
+    .nationalparks {
+        display: block;
+        width: 410px;
+        height: 400px;
+    }
+}
 
 
 @media (min-width: 992px) {
@@ -177,6 +205,18 @@ h2 {
     color: white;
    padding-top: 20px;
    margin-top: 10px;
+   
+}
+}
+
+@media (max-width: 768px) {
+#overlaytitle {
+    font-size: 18px;
+    color: #003366;
+   padding-top: 20px;
+   margin-top: 10px;
+   text-align: center;
+   padding-left: 40px;
    
 }
 }
@@ -232,6 +272,15 @@ h2 {
 }
 }
 
+@media (max-width: 768px) {
+    .information {
+       color: #003366;
+       margin-top: 50px;
+       font-size: 18px;
+       text-align: center;
+       padding-left: 40px;
+    }
+}
 
 
 /* ---------------------------------------------------Reviews*/
@@ -356,9 +405,21 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     padding-bottom: 60px;
-    
 
-   
+}
+
+@media (max-width: 768px) {
+.btn-main {
+    color: white;
+    font-weight: 400;
+    background-color: #00688B;
+    height: 40px;
+    width: 120px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding-bottom: 60px;
+
+}
 }
 
 .btn-main:hover {
@@ -373,18 +434,36 @@ h2 {
 .one {
     margin: 35px 20px 0 200px;
     
-   
 }
+
+@media (max-width: 768px) {
+    .one {
+        margin: 20px 10px 0 20px;
+    }
+}
+
 
 .two {
     margin: 35px 20px 0 200px;
 }
 
+@media (max-width: 768px) {
+    .two {
+        margin: 20px 10px 0 20px;
+    }
+}
+
+
+
 .three {
     margin: 35px 20px 0 200px;
 }
 
-
+@media (max-width: 768px) {
+    .three {
+        margin: 20px 10px 0 20px;
+    }
+}
 
 /* ---------------------------------------------------Info windows on google maps */
 
@@ -432,14 +511,23 @@ h2 {
      background-color: #00688B;
 }
 
+@media (max-width: 768px) {
+    #contactform {
+        box-sizing: border-box;
+        width: 430px;
+        height: 600px;
+         background-color: #00688B;
+    }
+}
+
 .form {
     width: 60%;
     height: 280px;
     margin-top: 40px;
     background-color: white;
-    margin-left: 300px
- 
+    margin-left: 300px;
 }
+
 
 #fullname {
     margin-bottom: 30px;
@@ -450,12 +538,20 @@ h2 {
 }
 
 
+
 #emailaddress {
     margin-bottom: 30px;
     width: 95%;
     padding-left: 20px;
     margin-left: 20px;
 }
+
+@media (max-width: 769px) {
+    #emailaddress {
+        padding-right: 40px;
+    }
+}
+
 
 #description {
     margin-bottom: 30px;
@@ -465,6 +561,13 @@ h2 {
     margin-left: 20px;
 }
 
+@media (max-width: 769px) {
+    #description {
+        padding-right: 40px;
+    }
+}
+
+
 
 h4 {
     color: white;
@@ -472,6 +575,14 @@ h4 {
      padding-top: 30px;
      text-align: center;
      padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    h4 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .form-header {
