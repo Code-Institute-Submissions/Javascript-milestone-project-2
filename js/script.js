@@ -1,18 +1,14 @@
 //I used Google Maps API documentation and took aspects of 'hotel autosearch' to create my map
 
 var map;
+var google;
 var infoWindow;
 var placesService;
 var markers = [];
 var america = { lat: 37.0902, lng: -95.7129 };
 var autocomplete;
 var placeType;
-var icon = {
-    url: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png',
-    scaledSize: new google.maps.Size(50,50),
-    origin: new google.maps.Point(0,0),
-    anchor: new googlemaps.Point(0,0)
-};
+var usMarker = "images/flagimage.png";
 
 //Generate map ------------------------------------- 
 function initMap() {
@@ -82,7 +78,7 @@ function initMap() {
         for (var i = 0; i < results.length; i++) {
           markers[i] = new google.maps.Marker({
             position: results[i].geometry.location,
-            icon: icon,
+            icon: usMarker,
            
           });
           markers[i].placeResult = results[i];

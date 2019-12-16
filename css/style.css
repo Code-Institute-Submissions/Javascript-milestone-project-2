@@ -211,13 +211,14 @@ h2 {
 
 @media (max-width: 768px) {
 #overlaytitle {
-    font-size: 18px;
-    color: #003366;
+   font-size: 18px;
+   color: #003366;
    padding-top: 20px;
    margin-top: 10px;
    text-align: center;
-   padding-left: 40px;
-   
+   padding-left: 15px;
+   padding-right: 15px;
+  
 }
 }
 
@@ -278,7 +279,8 @@ h2 {
        margin-top: 50px;
        font-size: 18px;
        text-align: center;
-       padding-left: 40px;
+       padding-left: 15px;
+       padding-right: 15px;
     }
 }
 
