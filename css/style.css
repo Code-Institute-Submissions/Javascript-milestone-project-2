@@ -188,9 +188,10 @@ h2 {
 @media (max-width: 768px) {
     .spaceneedle {
         display: block;
-        width: 413px;
+        width: 380px;
         height: 400px;
         padding-bottom: 20px;
+        margin-left: 18px;
     }
 }
 
@@ -207,8 +208,9 @@ h2 {
 @media (max-width: 768px) {
     .nationalparks {
         display: block;
-        width: 413px;
+        width: 380px;
         height: 400px;
+        margin-left: 18px;
     }
 }
 
@@ -225,6 +227,9 @@ h2 {
 @media (max-width: 768px) {
     .goldengate {
         margin-top: 40px;
+        width: 380px;
+        height: 400px;
+        margin-left: 18px;
     }
 }
 
@@ -377,6 +382,16 @@ h2 {
     margin-left: 40px;
 }
 
+@media (max-width: 768px) {
+    .review-img {
+        height: 150px;
+        width: 150px;
+        margin-left: 120px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}
+
 
 .card-body {
     text-align: center;
@@ -407,9 +422,10 @@ h2 {
 @media (max-width: 768px) {
 #map {
     height: 400px;
-    width: 420px;
+    width: 380px;
     margin-top: 50px;
     margin-bottom: 10px;
+    margin-left: 18px;
    
 }
 }
@@ -460,10 +476,10 @@ h2 {
 
 @media (max-width: 768px) {
     #usState {
-        color: black;
-        padding-top: 900px;
-        padding-left: 10px;
-        padding-right: 10px;
+        color: #003366;
+        padding-top: 870px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
