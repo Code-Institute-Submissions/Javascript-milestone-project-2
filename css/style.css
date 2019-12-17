@@ -1,4 +1,3 @@
-
 /* ---------------------------------------------------navbar*/
 
 .nav-bar-hover {
@@ -616,9 +615,10 @@ h2 {
 @media (max-width: 768px) {
     #contactform {
         box-sizing: border-box;
-        width: 420px;
+        width: 380px;
         height: 600px;
-         background-color: #00688B;
+        background-color: #00688B;
+        margin-left: 18px;
     }
 }
 
@@ -640,6 +640,12 @@ h2 {
 }
 
 
+@media (max-width: 768px) {
+#fullname {
+    width: 88%;
+}
+}
+
 
 #emailaddress {
     margin-bottom: 30px;
@@ -650,7 +656,7 @@ h2 {
 
 @media (max-width: 768px) {
     #emailaddress {
-        margin-right: 40px;
+        width: 88%;
     }
 }
 
@@ -663,9 +669,9 @@ h2 {
     margin-left: 20px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     #description {
-        padding-right: 40px;
+       width: 88%;
     }
 }
 
@@ -702,6 +708,13 @@ h4 {
 #submitButton:hover {
     background-color: #BF0A30;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #submitButton:hover {
+        background-color: #BF0A30;
+        color: white;
+    }
 }
 
 /* ---------------------------------------------------cards with package deals */
