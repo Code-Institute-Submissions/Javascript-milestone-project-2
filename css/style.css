@@ -28,13 +28,12 @@
     height: 500px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .carousel-item {
         height: 400px;
         width: 100%!important;
     }
 }
-
 
 
 .container-fluid {
@@ -43,7 +42,7 @@
 }
 
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
 .container-fluid {
     background-color: #BF0A30;
     width: 100%!important;
@@ -164,6 +163,8 @@ h2 {
 /* ---------------------------------------------------image cards that fade to text and paragraph of text below*/
 
 
+
+
 @media (min-width: 992px) {
 .box7 {
     float: left;
@@ -187,7 +188,7 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .spaceneedle {
         display: block;
         width: 380px;
@@ -197,6 +198,16 @@ h2 {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+    .spaceneedle {
+        display: block;
+        width: 600px;
+        height: 400px;
+        padding-bottom: 20px;
+        margin-left: 80px;
+        
+    }
+}
 
 
 .nationalparks {
@@ -216,6 +227,16 @@ h2 {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+    .nationalparks {
+        display: block;
+        width: 600px;
+        height: 400px;
+        padding-bottom: 20px;
+        margin-left: 80px;
+        
+    }
+}
 
 @media (min-width: 992px) {
 .goldengate {
@@ -234,6 +255,18 @@ h2 {
         margin-left: 18px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .goldengate {
+        display: block;
+        width: 600px;
+        height: 400px;
+        padding-bottom: 20px;
+        margin-left: 80px;
+        
+    }
+}
+
 @media (min-width: 992px) {
 .overlay {
     position: absolute;
@@ -263,7 +296,7 @@ h2 {
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 #overlaytitle {
    font-size: 20px;
    color: #003366;
@@ -271,6 +304,18 @@ h2 {
    text-align: center;
    padding-left: 15px;
    padding-right: 15px;
+  
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+#overlaytitle {
+   font-size: 20px;
+   color: white;
+   padding-top: 10px;
+   text-align: center;
+   padding-left: 60px;
+   padding-right: 60px;
   
 }
 }
@@ -303,7 +348,7 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
  .text {
     color: #003366;
     font-size: 18px;
@@ -311,6 +356,17 @@ h2 {
     padding-right: 10px;
     padding-top: 30px;
     padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+ .text {
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     }
 }
 
@@ -327,7 +383,17 @@ h2 {
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+    .largebox {
+        box-sizing: border-box;
+        height: 2000px;
+        width: 100%;
+        background-color: #00688B;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
 .information {
     padding-top: 370px;
     padding-left: 50px;
@@ -438,7 +504,7 @@ h2 {
 }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 #map {
     height: 500px;
     width: 600px;
