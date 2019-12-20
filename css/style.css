@@ -14,6 +14,8 @@
 
 .nav-item {
     font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -54,7 +56,7 @@
 
 .title {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -180%);
     color: #f0f1f2;
@@ -84,7 +86,7 @@
 @media (min-width: 992px) {
 .title2 {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -180%);
     color: #f0f1f2;
@@ -355,23 +357,36 @@ h2 {
     color: #003366;
 }
 
+@media (max-width: 768px) {
+    .card-text {
+        width: 300px;
+        
+    }
+}
 
 .card-body {
     text-align: center;
 
 }
 
+
 .review {
-    margin-top: 40px;
+    margin-top: 60px;
     background-color: white;
     padding-left: 250px;
 }
+
 
 .stars {
     color: yellow;
     font-size: 20px;
 }
 
+@media (max-width: 768px) {
+    .stars {
+        width: 300px;
+    }
+}
 
 .review-img {
     height: 200px;
@@ -386,9 +401,7 @@ h2 {
     .review-img {
         height: 150px;
         width: 150px;
-        margin-left: 120px;
-        margin-top: 15px;
-        margin-bottom: 10px;
+    
     }
 }
 
@@ -396,11 +409,6 @@ h2 {
 .card-body {
     text-align: center;
 
-}
-
-.review {
-    margin-top: 60px;
-    
 }
 
 
