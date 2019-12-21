@@ -242,13 +242,13 @@ h2 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .spaceneedle {
         display: block;
-        width: 600px;
+        width: 550px;
         height: 400px;
         padding-bottom: 20px;
-        margin-left: 80px;
+        margin-left: 100px;
         
     }
 }
@@ -271,13 +271,13 @@ h2 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .nationalparks {
         display: block;
-        width: 600px;
+        width: 550px;
         height: 400px;
         padding-bottom: 20px;
-        margin-left: 80px;
+        margin-left: 100px;
         
     }
 }
@@ -300,13 +300,13 @@ h2 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .goldengate {
         display: block;
-        width: 600px;
+        width: 550px;
         height: 400px;
         padding-bottom: 20px;
-        margin-left: 80px;
+        margin-left: 100px;
         
     }
 }
@@ -407,8 +407,8 @@ h2 {
  .text {
     color: white;
     font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 10px;
     }
@@ -429,15 +429,13 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 992px) {
     .largebox {
-        box-sizing: border-box;
-        height: 2000px;
         width: 100%;
         background-color: #00688B;
         padding-top: 30px;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 993px) {
 .information {
     padding-top: 370px;
     padding-left: 50px;
@@ -448,14 +446,26 @@ h2 {
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+.information {
+    padding-top: 370px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
     .information {
-       color: #003366;
-       margin-top: 50px;
-       font-size: 18px;
+       color: white;
+       font-size: 20px;
        text-align: center;
-       padding-left: 15px;
-       padding-right: 15px;
+       padding-top: 50px;
+       padding-left: 110px;
+       padding-right: 110px;
+       padding-bottom: 40px;
     }
 }
 
@@ -467,10 +477,19 @@ h2 {
     color: #003366;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .card-text {
         width: 300px;
         
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .card-text {
+        width: 200px;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 50px;
     }
 }
 
@@ -486,15 +505,29 @@ h2 {
     padding-left: 250px;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .review {
+        margin-left: 10px;
+        
+        
+    }
+}
 
 .stars {
     color: yellow;
     font-size: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .stars {
         width: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .stars {
+        font-size: 15px;
+        text-align: center;
     }
 }
 
@@ -507,7 +540,7 @@ h2 {
     margin-left: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .review-img {
         height: 150px;
         width: 150px;
@@ -516,11 +549,20 @@ h2 {
 }
 
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .review-img {
+        height: 100px;
+        width: 100px;
+      
+       
+    }
+}
+
+
 .card-body {
     text-align: center;
 
 }
-
 
 
 /* ---------------------------------------------------Google Map */
@@ -592,7 +634,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #usState {
         color: #003366;
         padding-top: 890px;
@@ -601,7 +643,7 @@ h2 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 #searchPlace {
     margin-top: 50px;
 }
