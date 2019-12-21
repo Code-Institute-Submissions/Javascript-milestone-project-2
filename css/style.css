@@ -55,7 +55,7 @@
 
 .title {
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -180%);
     color: #f0f1f2;
@@ -68,12 +68,13 @@
    
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
 .title {
     transform: translate(-50%, -180%);
+    top: 55%;
     color: #f0f1f2;
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 55px;
     background: rgba(0, 0, 0, 0);
     text-shadow: 2px 2px grey;
     text-align: center;
@@ -85,7 +86,23 @@
 @media (min-width: 992px) {
 .title2 {
     position: absolute;
-    top: 65%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+    color: #f0f1f2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px grey;
+    text-align: center;
+}   
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+.title2 {
+    position: absolute;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -180%);
     color: #f0f1f2;
@@ -115,7 +132,7 @@
     margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .people {
     margin-top: 60px;
     margin-left: 20px;
@@ -125,19 +142,34 @@
 }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .people {
+        width: 230px;
+        height: 200px;
+        margin-left: 70px;
+    }
+}
+
 h2 {
     margin-top: 40px;
     font-family: 'Poppins', sans-serif;
     color: #003366;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 h2 {
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
     color: #003366;
     text-align: center;
 }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    h2 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
 }
 
 
@@ -148,7 +180,7 @@ h2 {
     color: #003366;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .people2 {
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
@@ -157,6 +189,18 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 18px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+.people2 {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #003366;
+    text-align: center;
+    margin-right: 40px;
+    font-size: 18px;
+    padding-right: 40px;
 }
 }
 
