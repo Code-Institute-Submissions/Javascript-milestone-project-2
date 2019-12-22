@@ -599,7 +599,8 @@ h2 {
 #map {
     height: 600px;
     width: 670px;
-    margin-left: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
    
 }
 }
@@ -651,11 +652,11 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 992px) {
     #usState {
-        color: black;
+        color: #00688B;
         padding-left: 40px;
         padding-right: 40px;
-    
-    
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
     }
 }
 
@@ -667,8 +668,9 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 992px) {
     #searchPlace {
-        margin-top: 0;
+        margin-top: 20px;
         padding-bottom: 10px;
+        padding-top: 10px;
     }
 }
 
@@ -684,7 +686,7 @@ h2 {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .btn-main {
     color: white;
     font-weight: 400;
@@ -698,6 +700,19 @@ h2 {
 }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+.btn-main {
+    color: white;
+    font-weight: 400;
+    background-color: #00688B;
+    height: 40px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding-bottom: 70px;
+}
+}
+
 .btn-main:hover {
     background-color: white;
     font-size: 20px;
@@ -705,6 +720,26 @@ h2 {
     color: #002868;
     font-family: 'Poppins', sans-serif;
     
+}
+
+@media (max-width: 767px) {
+.btn-main:hover {
+    background-color: white;
+    font-size: 15px;
+    text-align: center;
+    color: #002868;
+    font-family: 'Poppins', sans-serif;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+.btn-main:hover {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    color: #002868;
+    font-family: 'Poppins', sans-serif;
+}
 }
 
 .one {
@@ -802,6 +837,7 @@ h2 {
         margin-top: 30px; 
         margin-right: 10px;
         font-size: 20px;
+        
     }
 }
 
@@ -877,7 +913,7 @@ h2 {
         width: 650px;
         height: 600px;
         background-color: #00688B;
-        margin-left: 50px;
+        margin-left: 60px;
     }
 }
 
