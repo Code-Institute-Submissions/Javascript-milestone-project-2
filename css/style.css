@@ -584,7 +584,7 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 #map {
     height: 400px;
     width: 380px;
@@ -595,15 +595,16 @@ h2 {
 }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 992px) {
 #map {
-    height: 500px;
-    width: 600px;
+    height: 600px;
+    width: 670px;
+    margin-left: 40px;
    
 }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 #map {
     height: 700px;
     width: 700px;
@@ -648,10 +649,27 @@ h2 {
     }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    #usState {
+        color: black;
+        padding-left: 40px;
+        padding-right: 40px;
+    
+    
+    }
+}
+
 @media (max-width: 767px) {
 #searchPlace {
     margin-top: 50px;
 }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #searchPlace {
+        margin-top: 0;
+        padding-bottom: 10px;
+    }
 }
 
 .btn-main {
@@ -793,13 +811,23 @@ h2 {
      background-color: #00688B;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #contactform {
         box-sizing: border-box;
         width: 380px;
         height: 600px;
         background-color: #00688B;
         margin-left: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+     #contactform {
+        box-sizing: border-box;
+        width: 650px;
+        height: 600px;
+        background-color: #00688B;
+        margin-left: 50px;
     }
 }
 
@@ -821,10 +849,17 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 #fullname {
     width: 88%;
 }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #fullname {
+        width: 94%;
+        
+    }
 }
 
 
@@ -835,9 +870,15 @@ h2 {
     margin-left: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #emailaddress {
         width: 88%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #emailaddress {
+        width: 94%;
     }
 }
 
@@ -850,12 +891,17 @@ h2 {
     margin-left: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #description {
        width: 88%;
     }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    #description {
+        width: 94%;
+    }
+}
 
 
 h4 {
