@@ -712,13 +712,13 @@ h2 {
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .one {
         margin: 20px 10px 0 20px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .one:hover {
         margin: 20px 10px 0 20px;
         background-color: #BF0A30;
@@ -727,22 +727,54 @@ h2 {
     }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .one {
+        margin: 30px 10px 0 160px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .one:hover {
+         margin: 30px 10px 0 160px;
+        background-color: #BF0A30;
+        color: white;
+        font-size: 20px
+    }
+}
+
 .two {
     margin: 35px 20px 0 200px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .two {
         margin: 20px 10px 0 20px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .two:hover {
         margin: 20px 10px 0 20px;
         background-color: #BF0A30;
         color: white;
         font-size: 15px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .two {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .two:hover {
+         margin-top: 30px;
+        background-color: #BF0A30;
+        color: white;
+        font-size: 20px
     }
 }
 
@@ -762,6 +794,24 @@ h2 {
         background-color: #BF0A30;
         color: white;
         font-size: 15px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .three {
+        margin-top: 30px; 
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .three:hover {
+         margin-top: 30px;
+         margin-right: 10px;
+        background-color: #BF0A30;
+        color: white;
+        font-size: 20px
     }
 }
 
@@ -839,6 +889,23 @@ h2 {
     margin-left: 300px;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+.label-name {
+    font-size: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+.label-email {
+    font-size: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+.label-description {
+    font-size: 20px;
+}
+}
 
 #fullname {
     margin-bottom: 30px;
@@ -912,11 +979,19 @@ h4 {
      padding-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     h4 {
         font-size: 20px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    h4 {
+        font-size: 23px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
