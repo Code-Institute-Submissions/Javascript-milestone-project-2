@@ -65,7 +65,22 @@
     text-shadow: 2px 2px grey;
     text-align: center;
    
-   
+}
+
+@media (max-width: 767px) {
+    .title {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+    color: #f0f1f2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px grey;
+    text-align: center;
+    font-size: 60px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -78,7 +93,7 @@
     background: rgba(0, 0, 0, 0);
     text-shadow: 2px 2px grey;
     text-align: center;
-   
+  
 }
 }
 
@@ -448,12 +463,13 @@ h2 {
 
 @media (max-width: 767px) {
 .information {
-    padding-top: 370px;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #003366;
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: 40px;
+    
 }
 }
 
@@ -466,6 +482,7 @@ h2 {
        padding-left: 110px;
        padding-right: 130px;
        padding-bottom: 40px;
+       
     }
 }
 
@@ -480,6 +497,8 @@ h2 {
 @media (max-width: 767px) {
     .card-text {
         width: 300px;
+        margin-left: 30px;
+        margin-bottom: 20px;
         
     }
 }
@@ -498,6 +517,17 @@ h2 {
 
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .review {
+        text-align: center;
+        background-color: white;
+        margin-left: 60px;
+        padding-top: 20px;
+        
+        
+    }
+}
+
 @media (min-width: 993px) {
 .review {
     margin-top: 60px;
@@ -506,7 +536,7 @@ h2 {
 }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 767px) {
     .review {
         text-align: center;
         background-color: white;
@@ -525,6 +555,7 @@ h2 {
 @media (max-width: 767px) {
     .stars {
         width: 300px;
+        margin-left: 30px;
     }
 }
 
@@ -549,6 +580,7 @@ h2 {
     .review-img {
         height: 150px;
         width: 150px;
+        margin-left: 120px;
     
     }
 }
