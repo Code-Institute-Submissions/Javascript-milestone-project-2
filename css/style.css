@@ -463,12 +463,13 @@ h2 {
 
 @media (max-width: 767px) {
 .information {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     color: #003366;
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 40px;
+    text-align: center;
     
 }
 }
@@ -679,7 +680,9 @@ h2 {
 @media (max-width: 767px) {
     #usState {
         color: #003366;
-        padding-top: 890px;
+        padding-top: 900px;
+        margin-left: 20px;
+        margin-right: 20px;
        
     }
 }
@@ -889,7 +892,10 @@ h2 {
 
 #info-box {
     max-width: 300px;
-    background-color:  #00688B;
+    background-color: #00688B;
+    border: solid;
+    border-color: #BF0A30;
+    border-width: 5px;
 }
 
 
@@ -898,7 +904,8 @@ h2 {
     font-weight: 400;
     font-size: 16px;
     color: white;
-  
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -909,15 +916,30 @@ h2 {
     
 }
 
+#place-address {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 #place-name {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 18px;
     margin: 5px;
-    padding-top: 15px;
+    padding-top: 12px;
+    padding-left: 5px;
    
+}
+
+#place-phoneNumber {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
 }
 
 
