@@ -948,7 +948,7 @@ h2 {
 #contactform {
     box-sizing: border-box;
     width: 100%;
-    height: 520px;
+    height: 540px;
     margin-top: 40px;
      background-color: #00688B;
 }
@@ -1001,9 +1001,9 @@ h2 {
 
 #fullname {
     margin-bottom: 30px;
-    width: 95%;
+    width: 30%;
     padding-left: 20px;
-    margin-left: 20px;
+    margin-left: 460px;
     
 }
 
@@ -1011,12 +1011,14 @@ h2 {
 @media (max-width: 767px) {
 #fullname {
     width: 88%;
+    margin-left: 20px;
 }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     #fullname {
         width: 94%;
+        margin-left: 20px;
         
     }
 }
@@ -1024,41 +1026,45 @@ h2 {
 
 #emailaddress {
     margin-bottom: 30px;
-    width: 95%;
+    width: 30%;
     padding-left: 20px;
-    margin-left: 20px;
+    margin-left: 460px;
 }
 
 @media (max-width: 767px) {
     #emailaddress {
         width: 88%;
+        margin-left: 20px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     #emailaddress {
         width: 94%;
+        margin-left: 20px;
     }
 }
 
 
 #description {
     margin-bottom: 30px;
-    width: 95%;
-    height: 120px;
+    width: 30%;
+    height: 130px;
     padding-left: 20px;
-    margin-left: 20px;
+    margin-left: 460px;
 }
 
 @media (max-width: 767px) {
     #description {
        width: 88%;
+       margin-left: 20px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     #description {
         width: 94%;
+        margin-left: 20px;
     }
 }
 
