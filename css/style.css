@@ -487,6 +487,7 @@ h2 {
 
 /* ---------------------------------------------------Reviews*/
 
+
 .card-text {
     font-size: 16px;
     color: #003366;
@@ -516,6 +517,10 @@ h2 {
 .card-body {
     text-align: center;
 
+}
+
+.review {
+    display: inline-block;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -580,8 +585,9 @@ h2 {
     .review-img {
         height: 150px;
         width: 150px;
-        margin-left: 20px;
-        margin-bottom: 10px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        margin-top: 30px;
 
     }
 }
@@ -677,9 +683,10 @@ h2 {
 @media (max-width: 767px) {
     #usState {
         color: #003366;
-        padding-top: 900px;
+        padding-top: 1050px;
         margin-left: 20px;
         margin-right: 20px;
+        
 
     }
 }
@@ -1113,5 +1120,4 @@ h4 {
         color: white;
     }
 }
-
 
