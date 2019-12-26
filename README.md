@@ -1,4 +1,4 @@
-##### Project Name: Travel USA
+# Project Name: Travel USA
 
 TravelUSA is a travel company that specialises in bespoke travel packages which are made to each customer specifications. This website is a single page
 website with Google Maps API. The map is designed as an exploratory feature to allow the user to look at different destinations all across the United States
@@ -6,9 +6,9 @@ and look at local attractions, places to eat as well as accomodation. The aim of
 is for the customer to design their own holiday package, choose where they want to go, what they want to do, and TravelUSA takes care of the rest.
 
 
-### UX:
+## UX:
 
-## Strategy:
+### Strategy:
 
 From my own previous experience and from the research I conducted online, it is very hard to find a travel company that designs bespoke packages for each
 customer. It is far more likely to find a travel company that offers ready made packages and the customer does not have much control over what is included
@@ -16,13 +16,13 @@ within this package. My friends, family and myself have had this problem many ti
 I therefore decided there is a need for a travel company who allows the customer to have total control over their holiday package, but someone does the hard work
 of booking and organsing it on their behalf. My aim was to create a simple, informative, modern and easy to use website.
 
-## Scope: 
+### Scope: 
 
 The website is designed for people of any age or circumstances to find a holiday that is suitable for them i.e. a young couple, a retired couple, someone traveling alone
 who wants to travel with a tour group and meet new people. The function of the map is for exploratory purposes to enable the user to be able to look at accomodation, restaurants and attractions
 are available to help them design their holiday.
 
-## Structure:
+### Structure:
 
 • The website is a one page website.
 • Navbar - sits at the top of the page and takes the user to the part of the page they wish to locate.
@@ -33,12 +33,12 @@ that when the user hovers over with the mouse, fades into a small paragraph of t
 • Contact form to allow the user to input their query and submit it to the company.
 • A footer that contains the social media links for TravelUSA.
 
-## Skeleton:
+### Skeleton:
 
 Wireframes for both desktop and mobile device can be found here: https://github.com/Leannald13/Javascript-milestone-project-2/blob/master/Wireframes%20for%20Javascript%20Project%20Milestone%20two.pdf
 
 
-## Surface: 
+### Surface: 
 
 For my second project, it was important to me that I used the constructive feedback from my last project to try to do even better on my second
 project, and take the comments on board. I received feedback explaining that modern web design greatly enhances the user experience and I have tried
@@ -67,7 +67,7 @@ from the British Association of Dyslexia website as a reference for font type, f
 • "I want to look at links on the website without losing my place on the website itself."
 
 
-### Features:
+## Features:
 
 Overview:
 •	Header
@@ -79,7 +79,7 @@ Overview:
     - Contact Us (takes the user to the contact form)
 •	Images and image carousel
 
-### Technologies used:
+## Technologies used:
 
 •	**HTML5 - https://html.com/** 
 The use of HTML5 was a requirement for this project
@@ -103,14 +103,14 @@ I used this on my “home page” and used an icon of a child instead of using b
 I used a font taken from Google Fonts throughout my website. 
 
 
-### Testing:
+## Testing:
 
-## Testing Planning: 
+### Testing Planning: 
 To test the website continuously throughout the process of making the website. To have the website tested by other people of different ages to gain
 their feedback on whether it is simple to use and informative. To run my code through validators to check that the code is accurate and of high quality.
 To test my website on ipad and mobile device and to check my website on other browers; Chrome, internet explorer and Firefox.
 
-## Testing on people:
+### Testing on people:
 I had members of my family test my website ranging from the age of 12 years old to 65 years old. All aspects of the website passed testing and
 I took their feedback on board to make some amendments to the visual aspects on the page e.g. the original shade of blue that I chose was felt to be too
 bright. I also had tutors from The Code Institute test my contact form to ensure it functioned correct. I asked my testers to do the following:
@@ -123,18 +123,18 @@ bright. I also had tutors from The Code Institute test my contact form to ensure
 • Can you complete the contact form and so we can test if an email is received.
 
 
-## Testing on ipad and mobile devices: 
+### Testing on ipad and mobile devices: 
 This took alot of work and adjustment to have my website look the way I intended it to on these devices however
 they now function effectively and visually appear the way I had intended them to.
 
-## Testing through validators: 
+### Testing through validators: 
 My CSS passed first time, however my HTML initially came up with 10 errors which have now been fixed.
 
-## Testing on different browsers: 
+### Testing on different browsers: 
 Testing passed.
 
 
-### Deployment:
+## Deployment:
 I used GitHub to deploy my code. I pushed my repository after I completed each task so ensure it was kept regularly up to date. I recieved feedback from my last project that my commit messages should be very clear and very specific and I have therefore
 tried to ensure I have done this during this project.
 My github repository for this project contains my files: index.html, style.css, script.js, sendEmail.js. There is also an images file which contains my images, my README.md file
@@ -147,15 +147,15 @@ and the PDF for my wireframes.
 **4) Select the link next to "Your website is published at"**
 **5) Click:  https://leannald13.github.io/Javascript-milestone-project-2/**
 
-### Media:
+## Media:
 The images that I used were all free images taken from Google searches for images of the USA and the USA flag.
 
-### Acknowledgements:
+## Acknowledgements:
 I would firstly like to acknowledge my mentor Anthony Ngene who has been a huge support for my projects. I would also like to acknowledge and thank 
 members of the Code Institute for their help during this project in particular Tim who has helped resolve some big challenges I was having with my Javascript.
 
 
-### Credits:
+## Credits:
 •	My navbar, form and buttons were taken from Bootstrap.
 •	 The 'About TravelUSA' section was written by me, but I took alot of information about the USA from other websites such as: 
     https://www.gapyear.com/articles/travel-tips/101-incredible-things-usa
