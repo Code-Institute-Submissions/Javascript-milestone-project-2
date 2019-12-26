@@ -1,19 +1,67 @@
 ## Project Name: Travel USA
 
-Travel USA is a travel company that specialises in bespoke travel packages which are made to each customer specifications. 
+TravelUSA is a travel company that specialises in bespoke travel packages which are made to each customer specifications. This website is a single page
+website with Google Maps API. The map is designed as an exploratory feature to allow the user to look at different destinations all across the United States
+and look at local attractions, places to eat as well as accomodation. The aim of having the map inbedded into the website is because the aim of TravelUSA
+is for the customer to design their own holiday package, choose where they want to go, what they want to do, and TravelUSA takes care of the rest.
 
 
 ## UX:
 
-The aim of this website is to firstly raise awareness of the seriousness of mental health issues in children in young people in this country to encourage people to sign Harrison’s petition and do their part to support the campaign. The second aim of this website was to promote and market Harrison as a young presenter and increase presenting opportunities, and increase the number of listeners on his podcast. My final aim for this website was to grab the attention of children and young people who are struggling with mental health problems to understand that many children face similar challenges, that they are not alone and there is always someone to talk to. 
-My aim for this website was to convey the message in the simplest way possible. I wanted to it to be easy to use so that it would be suitable for both children and adults. I therefore opted for a simple design without too much text.
-I used balsamiq wireframes to create both a mobile responsive wireframe and desktop. My wireframes are located in Github: https://github.com/Leannald13/NEW-milestone-project/blob/master/wireframes/html%20and%20css%20milestone%20project%20desktop%20and%20mobile.pdf.
+Strategy:
 
-- "As a user I want to learn more about Harrison and what experience he has as a presenter and his Mental Health Campaign."
-- "As a user I want to learn more about the mental health problems children my age are facing too.".
+From my own previous experience and from the research I conducted online, it is very hard to find a travel company that designs bespoke packages for each
+customer. It is far more likely to find a travel company that offers ready made packages and the customer does not have much control over what is included
+within this package. My friends, family and myself have had this problem many times and as a result it tends to be easier to plan and book holidays yourself.
+I therefore decided there is a need for a travel company who allows the customer to have total control over their holiday package, but someone does the hard work
+of booking and organsing it on their behalf. My aim was to create a simple, informative, modern and easy to use website.
+
+Scope: 
+
+The website is designed for people of any age or circumstances to find a holiday that is suitable for them i.e. a young couple, a retired couple, someone traveling alone
+who wants to travel with a tour group and meet new people. The function of the map is for exploratory purposes to enable the user to be able to look at accomodation, restaurants and attractions
+are available to help them design their holiday.
+
+Structure:
+
+- The website is a one page website.
+- Navbar - sits at the top of the page and takes the user to the part of the page they wish to locate.
+- The user is initially greeted with an image carousel of pictures of famous locations within the USA and the title of the company; TravelUSA.
+- The user is then provided with some information about TravelUSA, what they do and what makes them different from other companies. To do this I used images
+that when the user hovers over with the mouse, fades into a small paragraph of text.
+- Google maps with buttons underneath for the user to filter by 'hotel', 'restaurants' and 'attractions'.
+- Contact form to allow the user to input their query and submit it to the company.
+- A footer that contains the social media links for TravelUSA.
+
+Skeleton:
+
+Wireframes for both desktop and mobile device can be found here: https://github.com/Leannald13/Javascript-milestone-project-2/blob/master/Wireframes%20for%20Javascript%20Project%20Milestone%20two.pdf
+
+For my second project, it was important to me that I used the constructive feedback from my last project to try to do even better on my second
+project, and take the comments on board. I received feedback explaining that modern web design greatly enhances the user experience and I have tried
+to ensure that the design and colour scheme are modern. To do this, I did alot of research on the design of current travel websites and looked at modern website design
+templates to give me some ideas that could help me achieve this goal. As a Dyslexic myself, it is very important to me to make sure that the work I produce, now and during
+my career as a developer always considers the needs of those who have learning disabilities as I know first hand the impact that font and use and colour can have on a persons' ability
+to be able to read and process something. From the research I did, I noticed alot of web sites use alot of white as background colour and break up the page with bold colours. I also
+noticed alot of modern websites are very "clean" looking such as whites, grays and blacks. I therefore decided to use the colours of the American flag, red, white and blue as I considered this appropriate given that
+the website is about Travel in the USA. From the research I conducted on these colours; they have positive connotations for the user; red is considered energetic, warm and hard not to notice. 
+Blue is considered a "safe choice" as is widely used and therefore likely to appeal to larger audience and white is considered neutral and has an association of peacefullness and serenity. 
+Please see below links to just a few of the websites I used to do research on color schemes.
+
+https://sproutnewmedia.com/color-guide-using-red-in-your-website-design/
+https://www.crazyegg.com/blog/3-popular-colors-websites-use/
+https://www.motocms.com/blog/en/white-use-in-web-design/
+
+
+
+- "As a user I want to learn more TravelUSA, who they are and what they do and what makes them different to other travel companies".
+- "As a user I want to know why I should choose them over other companies and can see that they have credability".
 - "I want to come away from the website and understand what the aim of the website is."
 - "I want the website to be easy to use and pleasant to look at."
+- "As I user I want to see enough information to learn about the company, but not too much detail that I get bored of reading"
+- "As a user I want to website to be broken up into easy to read sections but also to see it flow appropriately."
 - "I want to look at links on the website without losing my place on the website itself."
+
 
 ## Features:
 
@@ -21,12 +69,11 @@ Overview:
 •	Header
 •	Footer
 •	Responsive navbar
-•	X4 pages : 
-   o Home page
-   o About Me page
-   o Statistic & charity links
-   o Contact page
-•	Images
+•	One page website:
+    - Home
+    - Plan your trip (the map)
+    - Contact Us (takes the user to the contact form)
+•	Images and image carousel
 
 Header:
 A large image of Harrison, which spreads across the width of the screen. This is the first thing the user will see when they arrive at the website.
