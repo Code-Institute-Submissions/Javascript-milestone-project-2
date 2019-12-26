@@ -79,7 +79,7 @@ function initMap() {
           markers[i] = new google.maps.Marker({
             position: results[i].geometry.location,
             icon: usMarker,
-           
+
           });
           markers[i].placeResult = results[i];
           google.maps.event.addListener(markers[i], 'click', showInfoWindow);
@@ -94,7 +94,7 @@ function initMap() {
   function dropMarker(i) {
     return function() {
       markers[i].setMap(map);
-      
+
     };
   }
 
@@ -139,5 +139,5 @@ function renderPlaceDetails(place) {
   else {
     document.getElementById('place-phoneNumber').textContent = 'Not available';
   }
- 
+
 }
