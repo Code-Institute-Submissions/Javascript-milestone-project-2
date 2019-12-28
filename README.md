@@ -1,4 +1,4 @@
-# Project Name: Travel USA
+# Project Name: TravelUSA
 
 TravelUSA is a travel company that specialises in bespoke travel packages which are made to each customer specifications. This website is a single page
 website with Google Maps API. The map is designed as an exploratory feature to allow the user to look at different destinations all across the United States
