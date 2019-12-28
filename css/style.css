@@ -961,7 +961,7 @@ h2 {
     #contactform {
         box-sizing: border-box;
         width: 380px;
-        height: 600px;
+        height: 700px;
         background-color: #00688B;
         margin-left: 18px;
     }
@@ -971,7 +971,7 @@ h2 {
     #contactform {
         box-sizing: border-box;
         width: 650px;
-        height: 600px;
+        height: 700px;
         background-color: #00688B;
         margin-left: 60px;
     }
@@ -1146,6 +1146,30 @@ h4 {
     font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width: 767px) {
+    .socialmedia {
+        font-size: 15px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-links li a i {
+        width: 10px;
+        height: 10px;
+        padding-top: 12px;
+        border-radius: 50%;
+        font-size: 12px;
+        line-height: 5px;
+        text-align: center;
+        color: blue !important;
+        background-color: white;
+        background-position: center;
+        color: #00688B !important;
+}
+}
 .social-links li a i {
         width: 28px;
         height: 28px;
