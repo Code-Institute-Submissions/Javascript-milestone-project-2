@@ -505,7 +505,61 @@ h2 {
     }
 }
 
+.circles {
+    padding-top: 100px;
+}
 
+.servicecard {
+  border: 1px solid  #00688B;
+  border-radius: 0;
+  transition: box-shadow 0.03s;
+  margin-top: 40px;
+
+}
+
+
+
+.servicecard-header {
+  color: white;
+  background-color:  #00688B;
+  padding: 30px;
+  border-bottom: 1px solid transparent;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.servicecard:hover {
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, .4);
+
+}
+
+
+.servicecard-footer h4 {
+  color: #aaa;
+  font-size: 15px;
+}
+
+
+
+.servicecard-footer .btn {
+  margin: 25px 0;
+}
+
+
+.servicecard-body {
+    font-family: 'Poppins', sans-serif;
+    color: #00688B;
+    margin-top: 20px;
+}
+
+#packagebutton {
+    background-color:  #00688B;
+}
+
+#packagebutton:hover {
+    background-color: #004080;
+}
 
 /* ---------------------------------------------------Reviews*/
 
