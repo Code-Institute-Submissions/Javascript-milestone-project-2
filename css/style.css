@@ -555,14 +555,37 @@ h2 {
 
 }
 
+.packagecard2 {
+  border: 0.5px solid #BF0A30;
+  border-radius: 0;
+  transition: box-shadow 0.03s;
+  margin-top: 60px;
+  width: 400px;
+  height: 493px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+
+}
+
 
 
 .packagecard-header {
   color: white;
-  background-color:  #00688B;
+  background-color: #00688B;
   padding: 30px;
   border-bottom: 1px solid transparent;
   font-family: 'Poppins', sans-serif;
+  
+
+}
+
+.packagecard-header2 {
+  color: white;
+  background-color: #BF0A30;
+  padding: 30px;
+  border-bottom: 1px solid transparent;
+  font-family: 'Poppins', sans-serif;
+  
 
 }
 
@@ -572,6 +595,10 @@ h2 {
 
 }
 
+.packagecard2:hover {
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, .4);
+
+}
 
 .packagecard-footer h4 {
   color: #aaa;
@@ -597,8 +624,22 @@ h2 {
     font-family: 'Poppins', sans-serif;
 }
 
+#packagebutton2 {
+    background-color: #BF0A30;
+    transition: all 0.25s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+}
+
 #packagebutton:hover {
     background-color: #004080;
+    transition: all 0.25s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#packagebutton2:hover {
+    background-color: #b20000;
     transition: all 0.25s ease-in-out;
     font-family: 'Poppins', sans-serif;
 }

@@ -128,10 +128,10 @@ This took alot of work and adjustment to have my website look the way I intended
 they now function effectively and visually appear the way I had intended them to.
 
 ### Testing through validators: 
-My CSS passed first time, however my HTML initially came up with 10 errors which have now been fixed.
+
 
 ### Testing on different browsers: 
-Testing passed.
+
 
 
 ## Deployment:
