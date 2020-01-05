@@ -515,7 +515,7 @@ h2 {
 @media (min-width: 768px) {
 .fa-check-circle {
     margin-right: 20px;
-    color: #00688B;
+    color: white;
 }
 }
 
@@ -529,7 +529,18 @@ h2 {
 }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+#circleone {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 250px;
+    padding-top: 30px;
+    
+}
+}
+
+@media (min-width: 1025px) {
 #circleone {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -537,6 +548,8 @@ h2 {
     margin-left: 500px;
 }
 }
+
+
 
 @media (max-width: 767px) {
 #circletwo {
@@ -548,7 +561,17 @@ h2 {
 }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+#circletwo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 250px;
+    
+}
+}
+
+@media (min-width: 1025px) {
 #circletwo {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -567,7 +590,17 @@ h2 {
 }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+#circlethree {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 250px;
+    
+}
+}
+
+@media (min-width: 1025px) {
 #circlethree {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -586,7 +619,16 @@ h2 {
 }
 } 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+#circlefour {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 250px;
+}
+} 
+
+@media (min-width: 1025px) {
 #circlefour {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -594,6 +636,7 @@ h2 {
     margin-left: 500px;
 }
 } 
+
 
 @media (min-width: 768px) {
 .box9 {
@@ -625,6 +668,19 @@ h2 {
 }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+.packagecard {
+  border: 0.5px solid  #00688B;
+  border-radius: 0;
+  transition: box-shadow 0.03s;
+  margin-top: 60px;
+  width: 200px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  
+}
+}
+
 
 .packagecard2 {
   border: 0.5px solid #BF0A30;
@@ -650,6 +706,18 @@ h2 {
 }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+.packagecard2 {
+  border: 0.5px solid #BF0A30;
+  border-radius: 0;
+  transition: box-shadow 0.03s;
+  margin-top: 60px;
+  width: 200px;
+  height: 730px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+}
 
 
 .packagecard-header {
@@ -1465,5 +1533,4 @@ h4 {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
-
 
