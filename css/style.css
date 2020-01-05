@@ -278,7 +278,7 @@ h2 {
 
 }
 
-/* ---------------------------------------------------image cards that fade to text and paragraph of text below*/
+/* ---------------------------------------------------image cards that fade to text and paragraph of text below, package deals*/
 
 @media (min-width: 992px) {
     .box7 {
@@ -506,43 +506,101 @@ h2 {
     }
 }
 
-.fa-check-circle {
-    margin-right: 20px;
+@media (max-width: 766px) {
+    .fa-check-circle {
+        margin: 0;
+    }
 }
 
+@media (min-width: 768px) {
+.fa-check-circle {
+    margin-right: 20px;
+    color: #00688B;
+}
+}
+
+@media (max-width: 767px) {
+#circleone {
+    color: #003366;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 110px;
+   
+}
+}
+
+@media (min-width: 768px) {
 #circleone {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     margin-left: 500px;
 }
+}
 
+@media (max-width: 767px) {
+#circletwo {
+     color: #003366;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 110px;
+   
+}
+}
+
+@media (min-width: 768px) {
 #circletwo {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     margin-left: 500px;
-    
+}
 }
 
+@media (max-width: 767px) {
+#circlethree {
+    color: #003366;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 110px;
+    
+}
+}
+
+@media (min-width: 768px) {
 #circlethree {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     margin-left: 500px;
 }
+}
 
+@media (max-width: 767px) {
+#circlefour {
+     color: #003366;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 110px;
+    
+}
+} 
+
+@media (min-width: 768px) {
 #circlefour {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     margin-left: 500px;
 }
+} 
 
+@media (min-width: 768px) {
 .box9 {
     width: 100%;
     height: 200px;
     background-color: #00688B;
+}
 }
 .packagecard {
   border: 0.5px solid  #00688B;
@@ -555,16 +613,41 @@ h2 {
 
 }
 
+@media (max-width: 767px) {
+.packagecard {
+  border: 0.5px solid  #00688B;
+  border-radius: 0;
+  transition: box-shadow 0.03s;
+  margin-top: 60px;
+  width: 350px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+}
+
+
 .packagecard2 {
   border: 0.5px solid #BF0A30;
   border-radius: 0;
   transition: box-shadow 0.03s;
   margin-top: 60px;
   width: 400px;
-  height: 493px;
+  height: 505px;
   margin-left: 15px;
   margin-bottom: 50px;
 
+}
+
+@media (max-width: 767px) {
+.packagecard2 {
+  border: 0.5px solid #BF0A30;
+  border-radius: 0;
+  transition: box-shadow 0.03s;
+  margin-top: 60px;
+  width: 350px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
 }
 
 
@@ -614,7 +697,8 @@ h2 {
 
 .packagecard-body {
     font-family: 'Poppins', sans-serif;
-    color: #00688B;
+    color: #003366;
+    font-size: 18px;
     margin-top: 20px;
 }
 
@@ -657,8 +741,9 @@ h2 {
         width: 350px;
         text-align: center;
         padding-bottom: 20px;
-        padding-left: 10px;
+        padding-left: 20px;
         padding-right: 10px;
+        margin-left: 15px;
 
 
     }
@@ -712,14 +797,14 @@ h2 {
 }
 
 .stars {
-    color: yellow;
+    color: #FFC312;
     font-size: 20px;
 }
 
 @media (max-width: 767px) {
     .stars {
         width: 300px;
-        margin-left: 30px;
+        margin-left: 50px;
     }
 }
 

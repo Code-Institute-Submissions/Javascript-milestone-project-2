@@ -8,7 +8,7 @@ var markers = [];
 var america = { lat: 37.0902, lng: -95.7129 };
 var autocomplete;
 var placeType;
-var usMarker = "images/flagimage.png";
+var usMarker = "images/americanflagmarker.png";
 
 //Generate map ----------
 function initMap() {
