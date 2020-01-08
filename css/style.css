@@ -783,6 +783,12 @@ h2 {
     margin-top: 25px;
 }
 
+#packagebutton3 {
+    background-color:  #00688B;
+    transition: all 0.25s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
 #packagebutton:hover {
     background-color: #004080;
     transition: all 0.25s ease-in-out;
@@ -792,6 +798,12 @@ h2 {
 
 #packagebutton2:hover {
     background-color: #b20000;
+    transition: all 0.25s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+#packagebutton3:hover {
+    background-color: #004080;
     transition: all 0.25s ease-in-out;
     font-family: 'Poppins', sans-serif;
 }
@@ -817,12 +829,13 @@ h2 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .card-text {
         width: 200px;
         font-size: 14px;
         padding-left: 10px;
         padding-right: 30px;
+        margin-left: 30px;
     }
 }
 
@@ -835,7 +848,7 @@ h2 {
     display: inline-block;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .review {
         text-align: center;
         background-color: white;
@@ -876,11 +889,12 @@ h2 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .stars {
         font-size: 15px;
         text-align: center;
-        margin-left: 50px;
+        margin-left: 40px;
+        
     }
 }
 
@@ -904,11 +918,11 @@ h2 {
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .review-img {
         height: 100px;
         width: 100px;
+        margin-left: 80px;
 
 
     }

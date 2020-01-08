@@ -1,7 +1,7 @@
 # Project Name: TravelUSA
 
 TravelUSA is a travel company that specialises in bespoke travel packages which are made to each customer specifications. This website is a single page
-website with Google Maps API. The map is designed as an exploratory feature to allow the user to look at different destinations all across the United States
+website with Google Maps API. The map is designed as an exploratory feature to allow the user to look at different destinations across the United States
 and look at local attractions, places to eat as well as accomodation. The aim of having the map inbedded into the website is because the aim of TravelUSA
 is for the customer to design their own holiday package, choose where they want to go, what they want to do, and TravelUSA takes care of the rest.
 
@@ -10,17 +10,17 @@ is for the customer to design their own holiday package, choose where they want 
 
 ### Strategy:
 
-From my own previous experience and from the research I conducted online, it is very hard to find a travel company that designs bespoke packages for each
+From my own personal experience and from the research I conducted online, it is very hard to find a travel company that designs bespoke packages for each
 customer. It is far more likely to find a travel company that offers ready made packages and the customer does not have much control over what is included
 within this package. My friends, family and myself have had this problem many times and as a result it tends to be easier to plan and book holidays yourself.
-I therefore decided there is a need for a travel company who allows the customer to have total control over their holiday package, but someone does the hard work
+I therefore decided there is a need for a travel company who allows the customer to have total control over their holiday package as well as offering ready made packages, but someone else does the hard work
 of booking and organsing it on their behalf. My aim was to create a simple, informative, modern and easy to use website.
 
 ### Scope: 
 
 The website is designed for people of any age or circumstances to find a holiday that is suitable for them i.e. a young couple, a retired couple, someone traveling alone
-who wants to travel with a tour group and meet new people. The function of the map is for exploratory purposes to enable the user to be able to look at accomodation, restaurants and attractions
-are available to help them design their holiday.
+who wants to travel with a tour group etc. The function of the map is for exploratory purposes to enable the user to be able to look at accomodation, restaurants and attractions
+are available to help them design their perfect holiday.
 
 ### Structure:
 
@@ -44,8 +44,8 @@ For my second project, it was important to me that I used the constructive feedb
 project, and take the comments on board. I received feedback explaining that modern web design greatly enhances the user experience and I have tried
 to ensure that the design and colour scheme are modern. To do this, I did alot of research on the design of current travel websites and looked at modern website design
 templates to give me some ideas that could help me achieve this goal. As a Dyslexic myself, it is very important to me to make sure that the work I produce, now and during
-my career as a developer always considers the needs of those who have learning disabilities as I know first hand the impact that font and use and colour can have on a persons' ability
-to be able to read and process something. From the research I did, I noticed alot of web sites use alot of white as background colour and break up the page with bold colours. I also
+my career as a developer, to always consider the needs of those who have learning disabilities as I know first hand the impact that font and use and colour can have on a persons' ability
+to be able to read and process text. From the research I did, I noticed alot of websites use alot of white as background colour and break up the page with bold colours. I also
 noticed alot of modern websites are very "clean" looking such as whites, grays and blacks. I therefore decided to use the colours of the American flag, red, white and blue as I considered this appropriate given that
 the website is about Travel in the USA. From the research I conducted on these colours; they have positive connotations for the user; red is considered energetic, warm and hard not to notice. 
 Blue is considered a "safe choice" as is widely used and therefore likely to appeal to larger audience and white is considered neutral and has an association of peacefullness and serenity. 
@@ -55,7 +55,7 @@ https://sproutnewmedia.com/color-guide-using-red-in-your-website-design/
 https://www.crazyegg.com/blog/3-popular-colors-websites-use/
 https://www.motocms.com/blog/en/white-use-in-web-design/
 
-I also used a font that is popularly used and is a font that someone with learning disabilities finds easy to read, as well as using a suitable font size. I took information
+I used a font that is popularly used and is a font that someone with learning disabilities finds easy to read, as well as using a suitable font size. I took information
 from the British Association of Dyslexia website as a reference for font type, font size and colours: https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide 
 
 • "As a user I want to learn more TravelUSA, who they are and what they do and what makes them different to other travel companies".
@@ -128,10 +128,14 @@ This took alot of work and adjustment to have my website look the way I intended
 they now function effectively and visually appear the way I had intended them to.
 
 ### Testing through validators: 
+CSS - no errors.
+Javascript - no errors.
+HTML - errors appeared and were fixed, except for using inline CSS in my HTML. I did attempt to remove them from my code and moved them into my style.css,
+however, this seemed create difficulties with getting my website to function the way I wanted it to. I therefore kept the inline CSS.
 
 
 ### Testing on different browsers: 
-
+Passed testing.
 
 
 ## Deployment:
