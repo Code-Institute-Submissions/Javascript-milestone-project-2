@@ -866,7 +866,7 @@ h2 {
 }
 
 
-/* ---------------------------------------------------Google Map */
+/* --------------------------------------------------Google Map */
 
 @media (min-width: 1200px) {
     .box5 {
@@ -876,6 +876,7 @@ h2 {
         background-color: #BF0A30;
         margin-left: 200px;
         margin-top: 40px;
+         border-radius: 3%;
     }
 }
 
@@ -1198,6 +1199,29 @@ h2 {
     font-size: 13px;
 }
 
+#place-website {
+    color: white;
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+     background-color: #BF0A30;
+     width: 150px;
+     margin-left: 68px;
+     margin-top: 15px;
+     border-radius: 3%;
+    
+}
+
+#place-website:hover {
+    color: white;
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+      background-color: #b20000;
+     width: 150px;
+     margin-left: 68px;
+     margin-top: 15px;
+     border-radius: 3%;
+    
+}
 
 /* ---------------------------------------------------contact form */
 

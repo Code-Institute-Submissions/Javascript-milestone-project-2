@@ -46,6 +46,7 @@ function initMap() {
 
   //Jquery learned from the Code Institute lessons to only generate specific markers when the user clicks on the button
 
+
   document.getElementById("accommodation").addEventListener("click", function() {
     placeType = ['lodging', 'hotel', 'motel', 'hostel'];
     clearMarkers();
@@ -140,4 +141,5 @@ function renderPlaceDetails(place) {
     document.getElementById('place-phoneNumber').textContent = 'Not available';
   }
 
+ document.getElementById('place-website').innerHTML = '<a class="btn btn-link" href="' + place.website + '" target="_blank">' + 'Website ' + '</a>';
 }
