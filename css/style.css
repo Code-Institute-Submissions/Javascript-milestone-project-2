@@ -1153,11 +1153,22 @@ h2 {
 /* ---------------------------------------------------Info windows on google maps */
 
 #info-box {
-    max-width: 300px;
+    width: 300px;
     background-color: #00688B;
     border: solid;
     border-color: #BF0A30;
     border-width: 5px;
+}
+
+@media (min-width: 736px) and (max-width: 1024px) {
+#info-box {
+    width: 200px;
+    height: 200px;
+    background-color: #00688B;
+    border: solid;
+    border-color: #BF0A30;
+    border-width: 5px;
+}
 }
 
 .place-line {
@@ -1169,9 +1180,20 @@ h2 {
 
 }
 
+@media (min-width: 736px) and (max-width: 1024px) {
+.place-line {
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+}
+
 .place-line-paragraphs {
     font-weight: 300;
     font-size: 12px;
+     font-family: 'Poppins', sans-serif;
 }
 
 #place-address {
@@ -1193,6 +1215,17 @@ h2 {
 
 }
 
+#place-name {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 5px;
+    padding-top: 12px;
+    padding-left: 5px;
+
+}
+
 #place-phoneNumber {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -1200,26 +1233,22 @@ h2 {
 }
 
 #place-website {
-    color: white;
      font-family: 'Poppins', sans-serif;
      text-align: center;
-     background-color: #BF0A30;
-     width: 150px;
-     margin-left: 68px;
+     margin-left: 5px;
      margin-top: 15px;
      border-radius: 3%;
+     border-color: white;
     
 }
 
 #place-website:hover {
-    color: white;
      font-family: 'Poppins', sans-serif;
      text-align: center;
-      background-color: #b20000;
-     width: 150px;
-     margin-left: 68px;
+     margin-left: 5px;
      margin-top: 15px;
      border-radius: 3%;
+     border-color: white;
     
 }
 

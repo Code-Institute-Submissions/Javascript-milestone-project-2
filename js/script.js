@@ -141,5 +141,5 @@ function renderPlaceDetails(place) {
     document.getElementById('place-phoneNumber').textContent = 'Not available';
   }
 
- document.getElementById('place-website').innerHTML = '<a class="btn btn-link" href="' + place.website + '" target="_blank">' + 'Website ' + '</a>';
+ document.getElementById('place-website').innerHTML = '<a class="btn btn-light" href="' + place.website + '" target="_blank">' + 'Website ' + '</a>';
 }

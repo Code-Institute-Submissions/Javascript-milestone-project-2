@@ -167,7 +167,7 @@ members of the Code Institute for their help during this project in particular T
     https://www.bon-voyage.co.uk/holidays/route_66_holidays/?gclid=Cj0KCQiA0ZHwBRCRARIsAK0Tr-qawZt7y45tkE8WyRDgE2-cW_kc-AWHcv-KGTB9b-iKEFXh_Z4tK_kaAgD2EALw_wcB
     https://www.touropia.com/tourist-attractions-in-the-usa/
 •   I used Google Maps API Documentation and used their code examples and adapted them such as: https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch
-    and https://developers.google.com/maps/documentation/javascript/custom-markers and https://developers.google.com/maps/documentation/javascript/markers.
+    and https://developers.google.com/maps/documentation/javascript/custom-markers and https://developers.google.com/maps/documentation/javascript/markers and https://developers.google.com/maps/documentation/javascript/reference/info-window and https://developers.google.com/maps/documentation/javascript/infowindows.
 •   I used stack over flow to help me change my markers to the United States flag as well as help from Tim at the Code Institute:  https://stackoverflow.com/questions/15096461/resize-google-maps-marker-icon-image/24794891#24794891
 •   I used the sessions outlined by the Code Institute to create my sendEmail.js 
 •   I used Stack overflow to help me figure out how to make my email submit and then clear: https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page
